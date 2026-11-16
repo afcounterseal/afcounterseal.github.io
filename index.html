@@ -1,1013 +1,235 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Ai-Fi Counterseal dApp Suite</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counterseal: a blockchain that runs the wallet for your other blockchains</title>
+<!-- Counterseal_Website_Draft_v0_25 · 2026-11-14 · v0.25: weaving described as broader than matching, at the founder request of 2026-11-15: new section Weaving is more than matching with a new diagram and five forms (match, combine, change the route, choose the block builder, deliver privately); value section reduced to return and receipt, with the statement of who receives the value moved into it; definition, step text, home card and the investor answer on trade execution extended to match; the old diagram, which showed a Bitcoin payment and the labels no exchange fee and nobody sees your order first, is replaced. v0.24: investor question on trade execution answered at more length at the founder request of 2026-11-15: the converging unsigned flow as the advantage, the sign-first constraint of other wallets with MetaMask Smart Transactions as the example, weaving as the use of the flow. v0.23: weaving page, definition of weaving rewritten at the founder request of 2026-11-15 to state the advantage: an ordinary wallet signs first, so a collected transaction can only be ordered; Counterseal signs last, so it can still be matched, merged or rearranged; the phrase on serving the owner best removed. v0.22: the status line made inconspicuous at the founder request of 2026-11-15: left-aligned at the bottom of the first dark block, smaller, muted grey, without its outline. v0.21: the status line (In development, not yet available) moved from above the headline to the bottom of the first dark block, below the two buttons, at the founder request of 2026-11-15. v0.20: the triangle mark confirmed by the founder on 2026-11-15 as the provisional logo, shared with Ai-Fi for now; browser-tab icon files added (favicon.ico and apple-touch-icon.png) beside the drawn icon; img/counterseal-logo-provisional.svg now holds the triangle mark and the twin-peaks drawing is removed; buttons and links keep the darker red because white text on it is easier to read. v0.19: trial of a different logo mark at the founder request of 2026-11-15: the triangle mark from the supplied icon file, redrawn without its lettering, in its red (#f80010); the same red applied to the superscript 2 and the statistics figures; the twin-peaks mark is kept in img/ for comparison. v0.18: mixed colour scheme chosen by the founder on 2026-11-15: dark menu bar, page headings, closing band and footer; white and pale grey reading sections in place of the pale coloured ones; no change to any text. v0.17: weaving added as a third application with its own page, following the founder decision of 2026-11-15; the section on value returned from transactions moved from the wallet page to it; home page now shows the wallet and three applications. v0.16: home page, theft section: four published figures on where losses occur (Chainalysis) and a statement that the weaknesses are structural; investors page: new question on a blockchain versus company-run servers, stating in full what a subscriber relies on. v0.15: home page, the second of the three industry problems corrected: hardware wallets now handle shielded Zcash (Ledger since September 2026, Keystone earlier), so the statement that no hardware wallet offers private payments was too broad. v0.14: the home-page diagram now shows six named blockchains and a marker for many more, in place of three chains and two stablecoins; the caption names stablecoins as assets. v0.13: the device in the home-page diagram is now tilted and larger, matching the illustration on the wallet page. v0.12: the superscript 2 is now red, in the headline formula and on the second explanation card; the first card title and its top border are now dark, so the three cards carry the same colours as the three parts of the headline. v0.11: the second explanation card on the home page is now titled with the whole term, the word in grey and the superscript 2 in violet at full size, in place of a lone small superscript. v0.10: logo changed to the twin-peaks mark (option A1) in bright red; site colours changed from teal to red to match; attack warnings changed from red to dark grey so the brand colour is not the warning colour. v0.9: split into pages (home, the wallet, payments, private balance, investors) following the founder decision of 2026-11-14 that Counterseal is a base wallet with two applications; section numbers removed; provisional logo mark, browser-tab icon and page descriptions added; full footer; contact details supplied by the founder; payments page added. Earlier history is in v0.8. Not cleared for publication. -->
+<meta name="description" content="Counterseal moves the work of a crypto wallet onto a blockchain and confirms every transaction on a hardware device in your hand. No seed phrase. Payments the public cannot see.">
+<meta property="og:title" content="Counterseal: a blockchain that runs the wallet for your other blockchains">
+<meta property="og:description" content="Counterseal moves the work of a crypto wallet onto a blockchain and confirms every transaction on a hardware device in your hand. No seed phrase. Payments the public cannot see.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='11.5 1.5 64 60'%3E%3Cpath fill-rule='evenodd' fill='%23f80010' d='M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-            <style>
-                .slider-area .single-slider .slider-cap-wrapper .hero__img1 {
-                    background-image: url(assets/img/hero/hero_img.jpg); background-size:cover;background-repeat:no-repeat; height: 861px;
-                }
-                .slider-area .single-slider .slider-cap-wrapper .hero__img1 .hero_title {
-                    margin-left: 20px; margin-top: 120px; margin-right: 20px; font-size: 20px; color: #fff;
-                }
-                @media (max-width: 575px) {
-                    .footer-logo {
-                        display: none;
-                    }
-                    .slider-area .single-slider .slider-cap-wrapper .hero__img {
-                        display: inline;
-                        width: 100%;
-                    }
-                    .slider-area .single-slider .slider-cap-wrapper .hero__img1 {
-                        background-image: url(assets/img/hero/hero_img.jpg); background-size:cover;background-repeat:no-repeat; height: 500px;
-                    }
-                    .slider-area .single-slider .slider-cap-wrapper .hero__img1 .hero_title {
-                        margin-left: 20px; margin-top: 40px; margin-right: 20px; font-size: 20px; color: #fff;
-                    }
-                }
-                @media only screen and (max-width: 767px) and (min-width: 576px) {
+<header class="nav" id="pagetop">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Counterseal home"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a>
+    <nav aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="index.html#series">The heists</a><a href="investors.html">Investors</a><a href="investors.html#contact">Contact</a></nav>
+  </div>
+</header>
 
-                    .slider-area .single-slider .slider-cap-wrapper .hero__img {
-                        display: inline;
-                        width: 100%;
-                    }
-                    .slider-area .single-slider .slider-cap-wrapper .hero__img1 {
-                        background-image: url(assets/img/hero/hero_img.jpg); background-size:cover;background-repeat:no-repeat; height: 500px;
-                    }
-                    .slider-area .single-slider .slider-cap-wrapper .hero__img1 .hero_title {
-                        margin-left: 20px; margin-top: 60px; margin-right: 20px; font-size: 20px; color: #fff;
-                    }
-                }
-                .section-padding3{padding-top:0px;padding-bottom:120px}
-                .single-news-area {
-                    position: relative;
-                    z-index: 1;
-                    margin-bottom: 15px;
-                }
-                .align-items-center {
-                    -ms-flex-align: center!important;
-                    align-items: center!important;
-                }
-                .d-flex {
-                    display: -ms-flexbox!important;
-                    display: flex!important;
-                }
-                .single-news-area .news-thumbnail {
-                    -webkit-box-flex: 0;
-                    -ms-flex: 0 0 37%;
-                    flex: 0 0 37%;
-                    max-width: 37%;
-                    width: 37%;
-                    margin: 0;
-                    padding: 0;
-                }
-                .single-news-area .news-thumbnail img {
-                    width: 100%;
-                }
-                .single-news-area .news-content {
-                    -webkit-box-flex: 0;
-                    -ms-flex: 0 0 63%;
-                    flex: 0 0 63%;
-                    max-width: 63%;
-                    width: 63%;
-                    padding-left: 15px;
-                }
-                .contact--area {
-                    position: relative;
-                    z-index: 1;
-                    margin: 0;
-                    padding: 0;
-                }
-                .section-heading {
-                    position: relative;
-                    z-index: 1;
-                    margin-bottom: 30px;
-                }
-                .contact--area {
-                    position: relative;
-                    z-index: 1;
-                }
-                .contact-content {
-                    padding: 55px 45px;
-                    background-color: #ffffff;
-                    border: 1px solid #afbace;
-                }
-                .contact-content .single-contact-content {
-                    position: relative;
-                    z-index: 1;
-                    margin-bottom: 45px;
-                }
-                .contact-content .single-contact-content .news-thumbnail {
-                    -webkit-box-flex: 0;
-                    -ms-flex: 0 0 20%;
-                    flex: 0 0 20%;
-                    max-width: 20%;
-                    width: 20%;
-                    margin: 0;
-                    padding: 0;
-                }
-                .contact-content .single-contact-content .icon {
-                    -webkit-box-flex: 0;
-                    -ms-flex: 0 0 48px;
-                    flex: 0 0 48px;
-                    max-width: 48px;
-                    width: 48px;
-                    height: 48px;
-                    line-height: 48px;
-                    color: #ffffff;
-                    text-align: center;
-                    margin-right: 15px;
-                }
-                .contact-content .single-contact-content .icon img {
-                    width: 100%;
-
-                }
-                .contact-content .single-contact-content .news-thumbnail img {
-                    width: 100%;
-                }
-            </style>
-   </head>
-
-   <body>
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-       <div class="header-area header_area header-transparent">
-            <div class="main-header">
-               <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-1 col-md-1">
-                                <div class="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                                <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav> 
-                                        <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
-                                            
-                                            <li><a href="about.html">About</a></li>
-                                            <!--
-                                            <li><a href="https://counterseal.sourceforge.io">Forum</a></li>
-                                            -->
-                                            <li><a href="index.html#download"><span class="btn btn-primary">Get Started</span></a></li>
-                                            <!-- 
-                                            <li><a href="work.html">Works</a></li>
-                                            
-                                            
-                                            <li><a href="blog.html">Community</a>
-                                                <ul class="submenu">
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="https://counterseal.sourceforge.io">Forum</a></li>
-                                                </ul>
-                                            </li>
-                                            -->
-                                            <!--
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        -->
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>   
-                            <!--
-                            <div class="row" style=" margin: auto;">
-                                <div class="col-6">
-                                    <a class="btn btn-success d-none d-sm-block nav-link" role="button" style="width: 7rem; background-color: #007bff; border:2px; " target="_blank" href="./getstarted.html">
-                                    Get Started
-                                    </a>
-                                </div> 
-                                
-                            </div> 
-                            -->
-
-                            <!-- <div class="col-xl-2 col-lg-3 col-md-3">
-                                <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="#download" class="btn header-btn">Get Started</a>
-                                </div>
-                            </div> -->
-                            
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-       </div>
-        <!-- Header End -->
-    </header>
-    <main>
-
-        <!-- slider Area Start-->
-        <div class="slider-area  slider-height" data-background="assets/img/hero/h1_hero.jpg">
-            <div class="slider-active">
-                <!-- Single Slider -->
-                <div class="single-slider">
-                    <div class="slider-cap-wrapper">
-                          <div class="hero__img hero__img1" data-animation="fadeInRight" data-transition-duration="5s">
-                            <div class="hero_title">
-                                "Don't put all your eggs in one basket" is all wrong... Put all your eggs in one basket, and then watch and carry the one 
-                                basket. It is trying to carry too many baskets that breaks most eggs in this country.</div>
-                            <div style="margin-left: 10px; margin-top: 0; margin-right: 70px; font-size: 18px; color: #fff; text-align: right;">Andrew Carnegie</div>
-                            <!--<img src="assets/img/hero/hero_img.jpg" alt=""  data-animation="fadeInRight" data-transition-duration="5s">-->
-                          </div>
-                          <div class="hero__caption"> 
-                              <h1 data-animation="fadeInLeft" data-delay=".4s">All Your Eggs <br>in One Counterseal Basket</h1>
-                              <p data-animation="fadeInLeft" data-delay=".6s">The onetime richest man in the world went on to say 
-                                he who carries three baskets must put one on his head, which is apt to tumble and trip him up. One 
-                                fault of the American businessmen is lack of concentration. <br><br>Enter the Ai-Fi Counterseal.<br><br> 
-                                It is no ordinary basket but an amalgamation of various seemingly distinct schemes of secret keeping,
-                                consolidated through our end-to-end but federated private emails and threshold crypto-signature technology. It 
-                                is the one basket that meets your entire egg storage needs without disrupting 
-                                concentration and safely keeping all your crypto seeds, email encryption materials, multi-factor
-                                eSignatures, master password of your 
-                                password manager and all critical secrets under an integrated solitary privacy-preserving Counterseal
-                                protection umbrella. </p>
-                         </div>.</p>
-                              
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slider Area End-->
-        <!-- Visit Our Tailor Start -->
-        <div class="visit-tailor-area fix">
-            <!--Right Contents  -->
-            <div class="tailor-offers">
-
-                <div>
-                    <!--
-                    <img src="assets/img/home/anonymousstorage.png" alt="">
-                    <h5>Secrets in Plain Sight</h5>
-                -->
-                </div>
-            </div>
-            <!-- left Contents -->
-            <div class="tailor-details">                
-                <div class="col-xl-8 col-lg-8 col-md-8">
-                    <h3>Ai-Fi Incognito Cloud</h3>
-                    <p>Crucial to the single egg basket design is the Ai-Fi Incognito Cloud where a variety of digital
-                    valuables are locked away in various types of Cryptons. 
-                    Each Crypton is protected by a private/public key pair, 
-                    retrievable through a password/passphrase and Entropy Extender for customizable cryptographic strength comparable 
-                    to or stronger than Bitcoins on the blockchain. This is how your egg basket is made indestructible.
-                    </p>            
-                    <div class="f-left">
-                        <a href="https://ai-fi.net/help/anonymouscloudstorage.html" target="_blank" class="btn btn-ans">DISCOVER</a>
-                    </div>
-                    <p><br></p>
-                    <div class="f-left">
-                        <a href="https://ai-fi.net/bounty.html" target="_blank" class="btn btn-ans">BUG BOUNTY</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- Visit Our Tailor End -->
-        
-        <!-- Want To Work Start -->
-        <div class="wantToWork-area w-padding">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-xl-5 col-lg-5 col-md-5">
-                        <div class="wantToWork-caption">
-                            <h2>Adapt to the Latest Technology</h2>
-                            <p>Safely keep your private notes, crypto seed mnemonics, email
-                               encryption materials, and master password of your password manager 
-                               under the integrated all-inclusive privacy-preserving Counterseal
-                               protection umbrella.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-7 col-lg-7 col-md-7">
-                        <div class="about-tittle">
-                            <img src="assets/img/home/countersealmain.png" alt="" style="width:80%;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Want To Work End -->
-        <!-- About Details Start -->
-        <div class="about-details-area section-padding3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="about-tittle">
-                            <img src="assets/img/home/seedpassphrase2.png" alt="" style="width: 90%;" />
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="about-details mb-50">
-                            <a href="https://ai-fi.net/aifiwebblog/best%20ai-fi%20security%20practices.html" target="_blank">
-                                <h5>Find a Home for Your "Paper" Vault</h5>
-                            <p class="pear2">Your crypto wallets are protected by 12 or 24 words of seed mnemonics, making up the
-                                all-or-nothing total worth of your digital assets. It's time to move them out of the stone age of paper records
-                                and store them into the Ai-Fi Incognito Cloud as a Crypton with encryption strength higher than Bitcoins
-                                on the blockchain.
-                            </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="about-tittle">
-                            <img src="assets/img/home/counterseal.png" alt="" style="width: 90%;" />
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="about-details">
-                            <a href="https://ai-fi.net/aifiwebblog/survey.html" target="_blank">
-                                <h5>Threshold Signature vs. Hardware Wallet</h5>
-                            <p class="pear2">Hardware wallets are perceived secure, as they may be kept in your pants pocket 
-                                            and less susceptible to malware attacks, until they are targeted or lost.
-                                            Besides, their recovery mnemonic words still need a home. Find out how an all-software 
-                                            Ai-Fi Counterseal solution takes care all your worries.
-                            </p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="about-tittle">
-                            <img src="assets/img/home/sss2.png" alt="" style="width: 90%;" />
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="about-details">
-                            <a href="https://ai-fi.net/help/superlock.html" target="_blank">
-                                <h5>Slice and Dice Your Secrets</h5>
-                            <p class="pear2">If you insist on using a paper vault, introduce some redundancy to protect those pieces of
-                                papers, or mix and match paper with "Cryptons" in the Ai-Fi Incognito Cloud. Split your individual secret 
-                                into multiple "shares", and distribute them in multiple locations or vaults. Make sure you don't lose the majority
-                                of the secret shares.
-                            </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="wantToWork-area w-padding">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-xl-5 col-lg-5 col-md-5">
-                        <div class="wantToWork-caption">
-                            <h2>Signal Protocol Maximized for eSign Contracting</h2>
-                            <p> Eliminating the service cloud and extending the popular Signal Protocol with metadata anonymization, the Counterseal 
-                                blend of digital identity, customizable multi-factor authentication, end-to-end PlexiMail encryption and 
-                                message registration leads naturally to the strongest eSignature 
-                                solution most resembling the traditional, immediate, and face-to-face negotiation
-                                process without involving any service providers, widely recognized as the low hanging fruits for snoops, cyber attacks
-                                and a variety of compromises, not to mention the intrusion into the Lawyer-Client confidentiality. CryptoSign 
-                                closes the gap in scenarios where insider confidentiality is of critical concern
-                                such as mergers and acquisitions, price biddings, IP transfer, offshore outsourcing and many others.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- <div class="col-xl-1 col-lg-1 col-md-1"> 
-
-                    </div>
-                    -->
-
-                    <div class="col-xl-7 col-lg-7 col-md-7">
-                        <div class="about-tittle">
-                            <img src="assets/img/home/esign-evolution.png" alt="" style="width:120%;height:180%;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About Details End -->
-        
-        <!-- Want To Work Start -->
-        <div id="download" class="wantToWork-area w-padding">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="wantToWork-caption">
-                        <h2>Downloads</h2>
-                        <p>
-                            Follow <a href="#download-counterseal-primary" style="color: #00aaff"> the link below</span></a>
-                            to download the Counterseal Mobile App from the app store for your phone, which is the portal to the Counterseal application suite. You may find
-                            its <a href="https://ai-fi.net/aifiwebblog/bindex.html#mobilehelp" style="color: #00aaff"> ReadMe Texts</span></a>
-                            helpful as the starting point. most applications in the suite
-                            also require auxiliary supports running on Windows, Mac or Linux,
-                            which need to be separately downloaded. The PlexiWallet
-                            has the most extensive supports on secondary devices due to its many redundant parts 
-                            and therefore is <a href="index.html#PlexiWalletDownload" 
-                            style="color: #00aaff"> independently described</a>.   
-                             <!-- &nbsp;&nbsp;&nbsp;&nbsp;     <a href="index.html#PlexiWalletDownload">
-                            <span class="btn btn-primary">Get PlexiWallet</span></a> <br> -->
-                            <br>
-                            Those auxiliary supports may be <a href="index.html#LiveSystemDownload" 
-                            style="color: #00aaff">"manufactured" by yourself onto a USB stick</a> to counter "Supply Chain Attack". The Live USB stick is bootable on any
-                            Wintel hardware platforms. <br>
-                            Although simple, the concept of Crypton is fundamental to some important aspects of our secret keeping 
-                            scheme, especially when the 
-                            <a href="https://ai-fi.net/aifiwebblog/best ai-fi security practices.html" style="color: #00aaff">Ai-Fi Incognito Cloud is utilized 
-                            to safekeeping the secrets</a>. <br>
-                            The PlexiMail is described here in its historical context, which is released through our free and open sources.
-                            Once secured end-to-end without leaking metadata but still maintaining its most important federation
-                            property, PlexiMail opens up many new applications for email, the most popular messaging tool in the world.
-                            Our CryptoSign eSignature solution demonstrates one such possibility.<br>
-                            
-                            The CryptoVault is hopefully self-explanatory.  
-                        </p>
-                
-                        
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="our-services" id="download-counterseal-primary">
-        </div>
-        <div class="our-services pb-100">
-        </div>
-        <div class="our-services pb-120">
-            <div class="container" >
-                <div class="row">
-
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-counterseal-ios">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <!-- <img src="assets/img/home/app-counterseal.png" /> -->
-                                <img  width="160" src="assets/img/home/ios-qrcode.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>Counterseal for iOS</h5>
-                                <p>Privacy is the Signature</p>
-                                <p>Scan (Camera) to download</p>
-                                
-                                <!-- <div class="wantToWork-btn f-center">
-                                    <a href="https://apps.apple.com/app/ai-fi-counterseal/id1533410806" class="btn btn-ans">Download</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-			
-                    <!--
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-counterseal-ios">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-counterseal.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>Counterseal Live System</h5>
-                                <p>Accessing Mobile Workspace and Cryptons</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 310c17257dba31d78eaae7961210720a6137c86ae921427c468ed1839ae8a991</p>
-                                
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://counterseal.net/rel-live.html" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                -->
-			
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-counterseal-win" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-counterseal.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>Counterseal Desktop for Windows</h5>
-                                <p>Accessing Mobile Workspace and Cryptons</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 9e1b04dde38e1b0e0fed4b5955a2952b3a7e1d16e91643902254ef6163170795</p>
-                                <p>* Visit same webpage on target platform for others </p>
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/Counterseal-1.0.53.exe" target="_blank" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-			
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-counterseal-mac" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-counterseal.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>Counterseal Desktop for MacOS</h5>
-                                <p>Accessing Mobile Workspace and Cryptons</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 0ebfa2a4d28fd0feeee92fd6620a9f5a0a625f4f2f9d3a5e16b55c73e7482619</p>
-                                <p>* Visit same webpage on target platform for others</p>
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/Counterseal-1.0.53.dmg" target="_blank" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-			
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-counterseal-linux" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-counterseal.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>Counterseal Desktop for Linux</h5>
-                                <p>Accessing Mobile Workspace and Cryptons</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 83e74934c88e68e9acc152afbb4defde0b099138a70f7f077cc288deeb69eeaf</p>
-                                <p>* Visit same webpage on target platform for others</p>
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/Counterseal-1.0.53.deb" target="_blank" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-			
-                    <!-- Additional Downloads 
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-counterseal.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet for Android</h5>
-                                <p>Primary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 4caebb0fd7533a29706da0ab6becb275830fb91977b2013cd901064e1468cb96</p>
-                                
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://sourceforge.net/projects/counterseal/files/Android/Counterseal-1.0.39.apk/download" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-counterseal.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet Live System</h5>
-                                <p>Secondary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: d5118a0174687983d2486613bda234ca069226578801a4eeccef37dfb34bda9a</p>
-                                
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://counterseal.net/rel-live.html" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-        <div id="PlexiWalletDownload" class="wantToWork-area w-padding">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="wantToWork-caption">
-
-                        
-
-                        <h2>PlexiWallet Downloads</h2>
-                        <p>
-                            Counterseal Primary/Secondary Signers run independently and cooperatively in
-                            signing crypto transactions, assisted by the Ai-Fi Incognito Cloud. In addition to the 
-                            sub-app PlexiWallet embedded in the Counterseal app, several mobile mobile packages are also independently offered for easy access. 
-                            The various Secondary Signers augment the function of the Primary
-                            but is not directly involved in signing. Currently the Ai-Fi CounterSeal app 
-                            is supported on Apple iOS only, whereas the PlexiWallet has extensive implementation on
-                            many platforms.<br>
-                            Since they are stateless, any Primary works with any other Secondary signers. Select the proper Primary/Secondary pair 
-                            to suit your platforms and your personal risk profile. 
-                        </p>
-                        <br>
-
-
-                        <a href="https://ai-fi.net/help/countersealhelp.html" target="_blank"> 
-                        <h5>Counterseal PlexiWallet Readme</h5>
-                        <p>This is for safekeeping your wallet seed mnemonics and signing air-gapped
-                            Bitcoin transactions, consisting of two separate components. All critical data are delegated to
-                            the care of Ai-Fi Incognito Cloud. 
-                        </p>
-                        <br>
-                        </a>
-                        <a href="https://ai-fi.net/help/cookbook.html" target="_blank"> <h5>Ai-Fi Counterseal Cookbook</h5>
-                        <p>Ai-Fi Central is the mobile app for interfacing with the Ai-Fi privacy-preserving security infrastructure. Ai-Fi Incognito
-                            Cloud is a small but critical building block of it, supporting the anonymous and secure storage of all crypto keys.
-                        </p>
-                        </a>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Want To Work End -->
-
-        <!-- Our Services Start -->
-        <div class="our-services pb-150">
-            <div class="container">
-                <div class="row">
-
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-plexiwallet-ios">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <!-- <img src="assets/img/home/app-plexiwallet-primary.png" /> -->
-                                <img  width="160" src="assets/img/home/ios-qrcode.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet for iOS</h5>
-                                <p>Primary Signer</p>
-                                <p>Scan to download</p>
-                                
-                                <!-- <div class="wantToWork-btn f-center">
-                                    <a href="https://apps.apple.com/app/ai-fi-counterseal/id1533410806" class="btn btn-ans">Download</a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-plexiwallet-android" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-plexiwallet-primary.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet for Android</h5>
-                                <p>Primary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 6693fa293df5bea38392ad54ef6a661d74fcc95ef640d9c602727ba212ae3a50</p>
-                                
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/PlexiWallet-1.0.53.apk" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-plexiwallet-ios">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-plexiwallet-secondary.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet Live System</h5>
-                                <p>Secondary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: dbe451b722daaa2f59081df4df755f3789690948bfb3d818618ef7ce3900d395</p>
-                                
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://counterseal.net/rel-live.html" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-plexiwallet-win" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                            <!--   
-                                <span class="flaticon-experience"></span>
-                            -->
-                            <img src="assets/img/home/app-plexiwallet-secondary.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet for Windows</h5>
-                                <p>Secondary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 9c66641c18592129599d14b9e5a2d8c5ac1088799d2f906668d5c2d660a68762</p>
-                                <p>* Visit same webpage on target platform for others</p>
-                                <div class="wantToWork-btn f-center">
-                                    <!-- <a href="https://ai-fi.net/apps/win/beta/PlexiWallet-Installer-1.0.52.exe" class="btn btn-ans">Download</a> -->
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/PlexiWallet-1.0.53.exe" target="_blank" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-plexiwallet-mac" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/home/app-plexiwallet-secondary.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet for MacOS</h5>
-                                <p>Secondary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: a4445b85718d506f9df9573816249aff75ddf8e6ce4290b862ad6b7a24a66c86</p>
-                                <p>* Visit same webpage on target platform for others</p>
-                                <div class="wantToWork-btn f-center">
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/PlexiWallet-1.0.53.dmg" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6" id="download-plexiwallet-linux" style="display: none;">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                            <!--   
-                                <span class="flaticon-experience"></span>
-                            -->
-                            <img src="assets/img/home/app-plexiwallet-secondary.png" />
-                            </div>
-                            <div class="services-cap">
-                                <h5>PlexiWallet for Linux</h5>
-                                <p>Secondary Signer</p>
-                                <p style="font-size: 10px; word-break: break-all;">SHA256: 28dd893c2ef01f3acde65fb4b1fb3aaa769e4f72fc323ebb63b68e7786c778a8</p>
-                                <p>* Visit same webpage on target platform for others</p>
-                                <div class="wantToWork-btn f-center">
-                                    <!-- <a href="https://ai-fi.net/apps/win/beta/Ai_Fi_Desktop-1.0.9-setup.exe" class="btn btn-ans">Download</a> -->
-                                    <a href="https://github.com/afcounterseal/packages/releases/download/v1.0.53/PlexiWallet-1.0.53.deb" target="_blank" class="btn btn-ans">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Our Services End -->
-        
-
-        <div id="LiveSystemDownload" class="wantToWork-area w-padding">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="wantToWork-caption">
-
-                        
-
-                        <h2>Live System Downloads</h2>
-                        <p>
-                            Counterseal Live System is a USB based state-less Counterseal Secondary Signer
-                                software which runs the <a href="https://tails.boum.org/"
-                                target="_blank" style="color:#00aaff; text-decoration: underline;">portable Linux system Tails</a> designed to protect against surveillance
-                                and censorship, highly desirable properties for crypto wallets. In Release 1.0 your wallet key materials 
-                                are safely stored in our Ai-Fi Incognito Cloud as Cryptons, which requires Internet access through Tor. They can also be
-                                backed up on your local storage. The requirement on storing them in our cloud
-                                will be made optional in later releases. 
-                                <br><br>
-                                In addition to the Tor access, the firewall of your Live USB allows only local LAN traffic, which is 
-                                necessary to pair this Secondary Signer with the Primary. The pairing follows the 
-                                TOFU (Trust On first Use) convention and is rigorously protected through dynamically created pairing 
-                                key pairs.
-                                <br><br>
-                                The production of this Secondary
-                                Signer software is the same as that for the Tails Linux. Please visit the Tails website for production
-                                instructions after downloading the compressed image file by pressing the "Download" button below.
-                                Currently we only support our Live USB on Wintel platform. Make sure you checksum the downloaded
-                                image file and compare it with our published checksum value.
-                                <br><br>
-                                
-                                
-                        </p>
-
-                        <p style="font-size: 10px; word-break: break-all;">SHA256: c568074a5f640023902ad87898126b20e0229fe085dee56be7d46f5bad7ce3</p>
-                        <p><a href="https://counterseal.net/rel-live.html" target="_blank" class="btn btn-ans f-center">Download</a></p>
-                        <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Want To Work End -->
-
-    </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area">
-            <div class="container">
-               <div class="footer-top footer-padding">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="single-footer-caption mb-30">
-                                    <!-- logo -->
-                                    <div class="footer-logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <!--  <h4><span>+1</span> 978 772 6437</h4> -->
-                                    <ul>
-                                        <li><a href="#">support@ai-fi.net</a></li>
-                                    </ul>
-                                    <p>121 S. Hope Street, Unit 209, <br>
-                                        Los Angeles, CA 90012
-                                    </p>
-                                </div>
-                                <!-- footer social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <!--
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Services</h4>
-                                    <ul>
-                                        <li><a href="#">Marketing</a></li>
-                                        <li><a href="#"> SEO Service</a></li>
-                                        <li><a href="#">Digital market</a></li>
-                                        <li><a href="#">Content create</a></li>
-                                        <li><a href="#">Find Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <!--
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Customer Care</h4>
-                                    <ul>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">News & Articles</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#"> Terms of Use</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        
-                        
-                    </div>
-               </div>
-                <div class="footer-bottom">
-                    <div class="row">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ai-Fi.net All rights reserved
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-    </div>
-
-
-    <!-- JS here -->
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
-
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
-
-		<!-- Nice-select, sticky -->
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
-        <script type="text/javascript">
-            function adapt_to_current_platform() {
-                if (navigator.platform === undefined) {
-                    return 'unknown';
-                }
-
-                if (navigator.platform.indexOf('Mac') === 0) {
-                    $('#download-counterseal-ios').css({display: 'inline'})
-                    $('#download-counterseal-win').css({display: 'none'})
-                    $('#download-counterseal-mac').css({display: 'inline'})
-                    $('#download-counterseal-linux').css({display: 'none'})
-
-                    $('#download-plexiwallet-ios').css({display: 'inline'})
-                    $('#download-plexiwallet-android').css({display: 'inline'})
-                    $('#download-plexiwallet-win').css({display: 'none'})
-                    $('#download-plexiwallet-mac').css({display: 'inline'})
-                    $('#download-plexiwallet-linux').css({display: 'none'})
-                } else if (navigator.platform.indexOf('Win') === 0) {
-                    $('#download-counterseal-ios').css({display: 'inline'})
-                    $('#download-counterseal-win').css({display: 'inline'})
-                    $('#download-counterseal-mac').css({display: 'none'})
-                    $('#download-counterseal-linux').css({display: 'none'})
-
-                    $('#download-plexiwallet-ios').css({display: 'inline'})
-                    $('#download-plexiwallet-android').css({display: 'inline'})
-                    $('#download-plexiwallet-win').css({display: 'inline'})
-                    $('#download-plexiwallet-mac').css({display: 'none'})
-                    $('#download-plexiwallet-linux').css({display: 'none'})
-                    
-                } else if (navigator.platform.indexOf('Linux') === 0) {
-                    $('#download-counterseal-ios').css({display: 'inline'})
-                    $('#download-counterseal-win').css({display: 'none'})
-                    $('#download-counterseal-mac').css({display: 'none'})
-                    $('#download-counterseal-linux').css({display: 'inline'})
-
-                    $('#download-plexiwallet-ios').css({display: 'inline'})
-                    $('#download-plexiwallet-android').css({display: 'inline'})
-                    $('#download-plexiwallet-win').css({display: 'none'})
-                    $('#download-plexiwallet-mac').css({display: 'none'})
-                    $('#download-plexiwallet-linux').css({display: 'inline'})
-                
-                } else if (navigator.platform.indexOf('iPhone') === 0 || navigator.platform.indexOf('iPad') === 0|| navigator.platform.indexOf('ipod') === 0) {
-
-                    $('#download-counterseal-ios').css({display: 'inline'})
-                    $('#download-counterseal-win').css({display: 'none'})
-                    $('#download-counterseal-mac').css({display: 'none'})
-                    $('#download-counterseal-linux').css({display: 'none'})
-
-                    $('#download-plexiwallet-ios').css({display: 'inline'})
-                    $('#download-plexiwallet-android').css({display: 'none'})
-                    $('#download-plexiwallet-win').css({display: 'none'})
-                    $('#download-plexiwallet-mac').css({display: 'none'})
-                    $('#download-plexiwallet-linux').css({display: 'none'})
-                } else if (navigator.platform.indexOf('Android') === 0) {
-
-                    $('#download-counterseal-ios').css({display: 'none'})
-                    $('#download-counterseal-win').css({display: 'none'})
-                    $('#download-counterseal-mac').css({display: 'none'})
-                    $('#download-counterseal-linux').css({display: 'none'})
-
-                    $('#download-plexiwallet-ios').css({display: 'none'})
-                    $('#download-plexiwallet-android').css({display: 'inline'})
-                    $('#download-plexiwallet-win').css({display: 'none'})
-                    $('#download-plexiwallet-mac').css({display: 'none'})
-                    $('#download-plexiwallet-linux').css({display: 'none'})
-                }
-            }
+<main id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="ctEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9d2d8"/><stop offset=".28" stop-color="#5a666e"/><stop offset=".62" stop-color="#2a3339"/><stop offset="1" stop-color="#9aa6ad"/></linearGradient>
+    <linearGradient id="ctBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#252d33"/><stop offset="1" stop-color="#0c1114"/></linearGradient>
+    <radialGradient id="ctScr" cx=".5" cy=".3" r=".9"><stop offset="0" stop-color="#0c3340"/><stop offset=".6" stop-color="#06202a"/><stop offset="1" stop-color="#03131a"/></radialGradient>
+    <linearGradient id="ctGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".45" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="ctBtn" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#59646b"/><stop offset=".55" stop-color="#262e33"/><stop offset="1" stop-color="#11161a"/></radialGradient>
+    <filter id="ctGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="ctSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+    <clipPath id="ctGlass"><rect x="14" y="14" width="232" height="384" rx="19"/></clipPath>
+  </defs>
+  <symbol id="ct-device" viewBox="0 0 260 440">
+    <ellipse cx="136" cy="420" rx="104" ry="13" fill="#10202b" opacity=".3" filter="url(#ctSoft)"/>
+    <rect x="5" y="6" width="254" height="406" rx="29" fill="#070a0c"/>
+    <rect x="1" y="1" width="254" height="406" rx="29" fill="url(#ctEdge)"/>
+    <rect x="4" y="4" width="248" height="400" rx="26.5" fill="url(#ctBody)"/>
+    <rect x="14" y="14" width="232" height="384" rx="19" fill="#05080a"/>
+    <rect x="20" y="20" width="220" height="300" rx="13" fill="url(#ctScr)"/>
+    <g font-family="IBM Plex Sans, sans-serif">
+      <rect x="34" y="34" width="9" height="8" rx="1.6" fill="#7fd6a4"/><path d="M35.6 34v-2.6a2.9 2.9 0 0 1 5.8 0V34" fill="none" stroke="#7fd6a4" stroke-width="1.5"/>
+      <text x="50" y="42" font-size="11" font-weight="600" fill="#9fc3cc" letter-spacing=".5">COUNTERSEAL</text>
+      <text x="226" y="42" font-size="10.5" fill="#6f909a" text-anchor="end">Verified</text>
+      <text x="34" y="82" font-size="14" fill="#bfe1e8">Send</text>
+      <text x="34" y="118" font-family="Bricolage Grotesque, sans-serif" font-size="33" font-weight="700" fill="#fff" letter-spacing="-.8">250.00</text>
+      <text x="150" y="118" font-size="15" font-weight="600" fill="#8fd0dc">USDC</text>
+      <g stroke="#1c4250" stroke-width="1"><path d="M34 140H226"/><path d="M34 180H226"/><path d="M34 220H226"/><path d="M34 260H226"/></g>
+      <g font-size="11" fill="#6f909a"><text x="34" y="157">To</text><text x="34" y="197">Address</text><text x="34" y="237">Network</text></g>
+      <g font-size="13.5" fill="#e6f4f7" text-anchor="end"><text x="226" y="170">Vendor DCMA</text><text x="226" y="210" font-family="IBM Plex Mono, monospace" font-size="12.5">0x4a33…9fc0</text><text x="226" y="250">Base</text></g>
+      <text x="130" y="296" font-size="11.5" fill="#f2b673" text-anchor="middle">Hold the button to confirm</text>
+    </g>
+    <path d="M14 14H150L52 398H14Z" fill="url(#ctGlare)" clip-path="url(#ctGlass)"/>
+    <circle cx="130" cy="359" r="26" fill="#e8811a" opacity=".75" filter="url(#ctGlow)"/>
+    <circle cx="130" cy="359" r="24" fill="none" stroke="#ffb45e" stroke-width="2.6"/>
+    <circle cx="130" cy="359" r="20" fill="url(#ctBtn)"/>
+    <circle cx="130" cy="359" r="20" fill="none" stroke="#000" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M117 350a16 16 0 0 1 17-6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<div class="hero">
+  <div class="wrap">
+    <div>
       
-            // Shorthand for $( document ).ready()
-            $(function() {
-                adapt_to_current_platform();
-            })
-        </script>
-    </body>
+      <h1 class="formula" aria-label="Blockchain squared plus one">Blockchain<sup>2</sup> <span class="plus">+</span> <span class="one">1</span></h1>
+      <p class="lead">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p>
+      <div class="cta">
+        <a class="btn" href="investors.html#contact">Request the investor presentation</a>
+        <a class="btn alt" href="wallet.html#how">See how it works</a>
+      </div>
+      <p class="herostatus"><span class="status">In development · not yet available</span></p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="decode">
+    <div><b>Blockchain</b><span><strong>Where your assets are.</strong> Bitcoin, Ethereum, Solana and most other major chains.</span></div>
+    <div><b><span class="dim">Blockchain</span><sup>2</sup></b><span><strong>Where your wallet runs.</strong> On a second blockchain, the Internet Computer, and not on your phone or on a company's servers.</span></div>
+    <div><b>+ 1</b><span><strong>What you gain.</strong> Payments inside Counterseal leave no record on any public chain.</span></div>
+  </div>
+</div>
+
+<section id="parts3">
+  <div class="wrap">
+    <div class="body">
+      <h2>One wallet. Three applications built on it.</h2>
+      <p class="lead">The wallet is the base. The three applications are separate services that use it to sign. The wallet does not depend on any of them.</p>
+      <div class="trio four">
+        <a class="tcard base" href="wallet.html"><span class="tag">The base</span><h3>The wallet</h3><p>Assets on Bitcoin, Ethereum, Solana and other chains, controlled by a private key that is never assembled anywhere. Every transaction is decoded on a blockchain and confirmed on a device in your hand. No seed phrase.</p><span class="go">How the wallet works →</span></a>
+        <a class="tcard app1" href="payments.html"><span class="tag">Application</span><h3>Payments</h3><p>Stablecoin payments for commerce and for software agents, with the owner's limits enforced by the service and shown on the device.</p><span class="go">The payment application →</span></a>
+        <a class="tcard app2" href="privacy.html"><span class="tag">Application</span><h3>Private balance</h3><p>Payments between Counterseal accounts that are never published to a public chain, for assets from many chains, Bitcoin included.</p><span class="go">The private balance →</span></a>
+        <a class="tcard app3" href="weaving.html"><span class="tag">Application</span><h3>Weaving</h3><p>Subscribers' confirmed transactions are gathered unsigned on a blockchain and given the form that suits their next step: matched, combined, sent by a different route, and delivered privately. The savings return to their owners.</p><span class="go">How weaving works →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="dilemma" class="sun">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>The powerful device is unsafe. The safe device cannot be made powerful.</h2>
+      <p class="lead">A crypto wallet has had only two places to do its work, and each one fails.</p>
+      <div class="grid2">
+        <div class="card"><span class="tag">The phone or PC</span><h3>Powerful, and the target of every attacker</h3><p>It is the only device a user owns with enough computing power. It is also too complicated and too widely used to be safe.</p></div>
+        <div class="card"><span class="tag">The hardware wallet</span><h3>Safe only while it stays simple</h3><p>It exists because the phone and PC cannot be trusted with keys or with recovery. Every capability added to it makes it more complicated, which removes the reason it was adopted.</p></div>
+      </div>
+      <p>Three of the industry's largest problems follow directly from this.</p>
+      <div class="rows">
+        <div><b>Blind signing</b><span>The device cannot decode what it signs, so its owner approves data nobody can read. This gets worse as blockchains and applications multiply.</span></div>
+        <div><b>Private payments that depend on the phone</b><span>The mathematical proofs behind private payments are too heavy for a hardware wallet, so the work goes back to the phone or PC. No hardware wallet we know of signs Railgun's private transfers. Zcash's private payments reached hardware wallets years after the chain offered them, and on some devices only.</span></div>
+        <div><b>The heists</b><span>Exchanges and institutions added the missing capability with servers and cloud services they run themselves. That added layer is where the Bybit and Binance thefts got in.</span></div>
+      </div>
+      <div class="callout" style="border-left-color:var(--sun)"><p><strong>Counterseal adds a third place.</strong> The heavy work runs on a blockchain, which is powerful, is not your phone, and is not a server any one company controls. The device stays simple. The phone is reduced to proposing.</p></div>
+      <figure class="mapfig">
+        <svg viewBox="0 0 520 548" role="img" aria-label="Bitcoin, Ethereum, Solana, Base, Arbitrum, BNB Chain and many more blockchains connect to one wallet that runs on a blockchain. Below it, a hardware device shows a payment waiting for confirmation.">
+          <defs>
+            <linearGradient id="hx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0141a"/><stop offset="1" stop-color="#9c0a10"/></linearGradient>
+            <filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#10202b" flood-opacity=".18"/></filter>
+          </defs>
+          <g stroke="#7b93a6" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round" fill="none">
+            <path d="M260 190 L163.6 75.1"/><path d="M260 190 L260.0 40.0"/><path d="M260 190 L356.4 75.1"/><path d="M260 190 L115.1 151.2"/><path d="M260 190 L404.9 151.2"/><path d="M260 190 L119.0 241.3"/><path d="M260 190 L401.0 241.3"/>
+          </g>
+          <path d="M260 262 L260 312" stroke="#e8811a" stroke-width="4" stroke-linecap="round"/>
+          <g filter="url(#sh)" font-family="IBM Plex Mono, monospace" font-weight="600" font-size="14" text-anchor="middle" fill="#fff">
+            <circle cx="163.6" cy="75.1" r="29" fill="#f7931a"/><text x="163.6" y="80.1" fill="#fff">BTC</text>
+            <circle cx="260.0" cy="40.0" r="29" fill="#627eea"/><text x="260.0" y="45.0" fill="#fff">ETH</text>
+            <circle cx="356.4" cy="75.1" r="29" fill="#9945ff"/><text x="356.4" y="80.1" fill="#fff">SOL</text>
+            <circle cx="115.1" cy="151.2" r="29" fill="#0052ff"/><text x="115.1" y="156.2" fill="#fff">BASE</text>
+            <circle cx="404.9" cy="151.2" r="29" fill="#213147"/><text x="404.9" y="156.2" fill="#fff">ARB</text>
+            <circle cx="119.0" cy="241.3" r="29" fill="#f0b90b"/><text x="119.0" y="246.3" fill="#1a1205">BNB</text>
+          </g>
+          <g>
+            <circle cx="401.0" cy="241.3" r="29" fill="#fff" stroke="#10202b" stroke-width="2" stroke-dasharray="4 5"/>
+            <text x="401.0" y="240.3" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="#10202b">+ many</text>
+            <text x="401.0" y="254.3" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="#10202b">more</text>
+            <g fill="#7b93a6"><circle cx="392.4" cy="293.4" r="7" opacity="0.55"/><circle cx="368.4" cy="328.7" r="5.5" opacity="0.38"/><circle cx="339.8" cy="353.6" r="4.5" opacity="0.24"/><circle cx="127.6" cy="293.4" r="7" opacity="0.55"/><circle cx="151.6" cy="328.7" r="5.5" opacity="0.38"/><circle cx="180.2" cy="353.6" r="4.5" opacity="0.24"/></g>
+          </g>
+          <g filter="url(#sh)">
+            <path d="M260 112 L328 151 L328 229 L260 268 L192 229 L192 151 Z" fill="url(#hx)"/>
+            <text x="260" y="182" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="21" fill="#fff">Your wallet</text>
+            <text x="260" y="204" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="#e2f3f6">runs on a blockchain</text>
+            <text x="260" y="221" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="#e2f3f6">(Internet Computer)</text>
+          </g>
+          <use href="#ct-device" x="196" y="318" width="128" height="217" transform="rotate(-6 260 426)"/>
+          <text x="348" y="416" font-family="IBM Plex Sans, sans-serif" font-size="13.5" font-weight="600" fill="#10202b">You confirm on</text>
+          <text x="348" y="434" font-family="IBM Plex Sans, sans-serif" font-size="13.5" font-weight="600" fill="#10202b">your own device</text>
+        </svg>
+        <figcaption>The third place. Your assets, including stablecoins such as USDC and USDT, stay on their own chains: Bitcoin, Ethereum, Solana and most other chains. The wallet's work runs on a second blockchain. The device in your hand shows the result and takes your decision.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section id="why">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>The two largest exchange thefts on record did not break a blockchain.</h2>
+      <p class="lead">They broke the ordinary computers around it: the web page the signers read, and the servers that decided what to sign.</p>
+      <figure>
+        <img src="img/fig-1-1.jpg" alt="Bar chart of the largest thefts on record. Binance, October 2026, 6.3 billion dollars. Bybit, February 2025, 1.5 billion dollars. Central Bank of Iraq, about 1 billion. Ronin Network 625 million. Poly Network 611 million. Coincheck 534 million. Mt. Gox 473 million. Bitget 388 million. DMM Bitcoin 305 million.">
+        <figcaption>The largest thefts made public when they happened, in US dollars at the time of the theft. Bybit and Binance came twenty months apart and are attributed by the FBI to the same attacker. The chart does not show the loss at the mining pool LuBian in December 2020 (about $3.5 billion), which was disclosed only in 2025.</figcaption>
+      </figure>
+      <div class="grid2">
+        <div class="card">
+          <span class="tag">Bybit · February 2025</span>
+          <div class="big">$1.5B</div>
+          <h3>The signers read one transaction and signed another.</h3>
+          <p>Attackers changed the wallet's web page, which was stored with a cloud provider. The page showed a routine transfer. The hardware wallets showed the real transaction as raw data that nobody could read. Every signer followed procedure.</p>
+          <a href="heist-1.html">Read Part 1: The Locked Room →</a>
+        </div>
+        <div class="card">
+          <span class="tag">Binance · October 2026</span>
+          <div class="big">$6.3B</div>
+          <h3>The exchange's own signing system signed the wallet away.</h3>
+          <p>Nobody was deceived, because no person was asked. Attackers reached the system that signs for the exchange's automated wallets and had it produce fifty valid authorizations. The blockchain checked the signatures and obeyed.</p>
+          <a href="heist-4.html">Read Part 4: Fifty Signatures →</a>
+        </div>
+      </div>
+      <h3 style="font-size:24px;margin-top:10px">These are not two accidents. This is where the losses are.</h3>
+      <div class="stats">
+        <div><b>44%</b><span>of everything stolen in 2025, about $1.5 billion of $3.4 billion, was the Bybit theft alone.</span></div>
+        <div><b>88%</b><span>of the amount stolen in the first quarter of 2025 was taken from centralized services: companies that hold customers' assets on servers they run.</span></div>
+        <div><b>43.8%</b><span>of the amount stolen in 2024 was lost through compromised private keys, the largest single cause that year.</span></div>
+        <div><b>80,000</b><span>individual owners, at least, had their personal wallets drained in 2025, in 158,000 separate cases.</span></div>
+      </div>
+      <p class="small">Figures from Chainalysis, Crypto Crime Reports covering 2024 and 2025. Over the same period, thefts from applications built on blockchains fell while the value held in them rose.</p>
+      <div class="callout"><p><strong>The common cause.</strong> In both cases the private keys were protected. The decision about what to sign was made by ordinary software on ordinary computers, and nothing independent checked that decision before the signature. A third theft, $387.5 million from Bitget in September 2026, followed the same pattern: forged commands reached the signing systems, and they signed.</p></div>
+      <div class="callout" style="border-left-color:var(--seal)"><p><strong>These weaknesses are structural.</strong> A service reached through a browser on a phone or PC, supported by servers its operator runs, and approved on a device that cannot show what is being signed, has the same three openings every time. Better procedures narrow them. They do not close them: the Binance theft came twenty months after Bybit. Counterseal has none of the three. What remains is the correctness of Counterseal's own published code, which anyone can inspect and which must pass independent audit before release.</p></div>
+    </div>
+  </div>
+</section>
+<section id="series" class="sky">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>Read the evidence: Anatomy of the Largest Heists in History.</h2>
+      <p class="lead">Our four-part reconstruction of the Bybit and Binance thefts, written for readers who are not engineers.</p>
+      <div class="parts">
+        <a class="part" href="heist-1.html"><img src="img/fig-1-1-s.jpg" alt=""><div><span class="tag">Part 1</span><h3>The Locked Room</h3><span class="d">$1.5 billion left Bybit while every signer followed procedure. The first explanation, careless signers, was wrong.</span><span class="go">Read Part 1 →</span></div></a>
+        <a class="part" href="heist-2.html"><img src="img/fig-2-1-s.jpg" alt=""><div><span class="tag">Part 2</span><h3>The Trail Out the Door</h3><span class="d">The attack began seventeen days earlier, at a developer of the wallet software. One hidden setting turned a payment into a takeover.</span><span class="go">Read Part 2 →</span></div></a>
+        <a class="part" href="heist-3.html"><img src="img/fig-3-1-s.jpg" alt=""><div><span class="tag">Part 3</span><h3>No Backstop</h3><span class="d">Bybit's customers lost nothing only because Bybit could afford to pay. Crypto has no deposit insurance and no reversal.</span><span class="go">Read Part 3 →</span></div></a>
+        <a class="part" href="heist-4.html"><img src="img/fig-4-1-s.jpg" alt=""><div><span class="tag">Part 4</span><h3>Fifty Signatures</h3><span class="d">In October 2026 the same attacker took $6.3 billion from Binance, five weeks after a smaller theft at Bitget. The thefts share the same openings.</span><span class="go">Read Part 4 →</span></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ctaband"><div class="wrap"><h2>Counterseal is in development. Investors can ask for the full presentation.</h2><div class="cta"><a class="btn" href="investors.html#contact">Request the investor presentation</a><a class="btn alt" href="investors.html">Questions investors ask</a></div></div></section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><a class="brand" href="index.html"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a><p class="small">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p></div>
+      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
+      <div><h4>The heists</h4><a href="heist-1.html">Part 1: The Locked Room</a><a href="heist-2.html">Part 2: The Trail Out the Door</a><a href="heist-3.html">Part 3: No Backstop</a><a href="heist-4.html">Part 4: Fifty Signatures</a></div>
+      <div><h4>Company</h4><a href="investors.html">For investors</a><a href="investors.html#today">Status and patents</a><a href="investors.html#contact">Contact</a><a href="mailto:alathrop2000@gmail.com">alathrop2000@gmail.com</a></div>
+    </div>
+    <p class="small legal">© 2026 Counterseal, Inc. In development; not yet available. Nothing on this site is an offer to sell a product, a token or a security. Bybit, Binance, Railgun, Zcash, GNU Taler, Safe and other names belong to their owners and are used only to describe public events and public designs.</p>
+  </div>
+</footer>
+
+<script>
+/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. */
+(function(){function up(){if(location.hash.length>1)return;try{window.scrollTo(0,0);var t=document.getElementById("top");if(t&&t.scrollIntoView)t.scrollIntoView({block:"start"});}catch(e){}}
+if("scrollRestoration" in history){try{history.scrollRestoration="manual";}catch(e){}}
+up();window.addEventListener("pageshow",up);window.addEventListener("load",up);})();
+</script>
+</body>
 </html>

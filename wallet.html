@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The wallet · Counterseal</title>
+<!-- Counterseal_Website_Draft_v0_25 · 2026-11-14 · v0.25: weaving described as broader than matching, at the founder request of 2026-11-15: new section Weaving is more than matching with a new diagram and five forms (match, combine, change the route, choose the block builder, deliver privately); value section reduced to return and receipt, with the statement of who receives the value moved into it; definition, step text, home card and the investor answer on trade execution extended to match; the old diagram, which showed a Bitcoin payment and the labels no exchange fee and nobody sees your order first, is replaced. v0.24: investor question on trade execution answered at more length at the founder request of 2026-11-15: the converging unsigned flow as the advantage, the sign-first constraint of other wallets with MetaMask Smart Transactions as the example, weaving as the use of the flow. v0.23: weaving page, definition of weaving rewritten at the founder request of 2026-11-15 to state the advantage: an ordinary wallet signs first, so a collected transaction can only be ordered; Counterseal signs last, so it can still be matched, merged or rearranged; the phrase on serving the owner best removed. v0.22: the status line made inconspicuous at the founder request of 2026-11-15: left-aligned at the bottom of the first dark block, smaller, muted grey, without its outline. v0.21: the status line (In development, not yet available) moved from above the headline to the bottom of the first dark block, below the two buttons, at the founder request of 2026-11-15. v0.20: the triangle mark confirmed by the founder on 2026-11-15 as the provisional logo, shared with Ai-Fi for now; browser-tab icon files added (favicon.ico and apple-touch-icon.png) beside the drawn icon; img/counterseal-logo-provisional.svg now holds the triangle mark and the twin-peaks drawing is removed; buttons and links keep the darker red because white text on it is easier to read. v0.19: trial of a different logo mark at the founder request of 2026-11-15: the triangle mark from the supplied icon file, redrawn without its lettering, in its red (#f80010); the same red applied to the superscript 2 and the statistics figures; the twin-peaks mark is kept in img/ for comparison. v0.18: mixed colour scheme chosen by the founder on 2026-11-15: dark menu bar, page headings, closing band and footer; white and pale grey reading sections in place of the pale coloured ones; no change to any text. v0.17: weaving added as a third application with its own page, following the founder decision of 2026-11-15; the section on value returned from transactions moved from the wallet page to it; home page now shows the wallet and three applications. v0.16: home page, theft section: four published figures on where losses occur (Chainalysis) and a statement that the weaknesses are structural; investors page: new question on a blockchain versus company-run servers, stating in full what a subscriber relies on. v0.15: home page, the second of the three industry problems corrected: hardware wallets now handle shielded Zcash (Ledger since September 2026, Keystone earlier), so the statement that no hardware wallet offers private payments was too broad. v0.14: the home-page diagram now shows six named blockchains and a marker for many more, in place of three chains and two stablecoins; the caption names stablecoins as assets. v0.13: the device in the home-page diagram is now tilted and larger, matching the illustration on the wallet page. v0.12: the superscript 2 is now red, in the headline formula and on the second explanation card; the first card title and its top border are now dark, so the three cards carry the same colours as the three parts of the headline. v0.11: the second explanation card on the home page is now titled with the whole term, the word in grey and the superscript 2 in violet at full size, in place of a lone small superscript. v0.10: logo changed to the twin-peaks mark (option A1) in bright red; site colours changed from teal to red to match; attack warnings changed from red to dark grey so the brand colour is not the warning colour. v0.9: split into pages (home, the wallet, payments, private balance, investors) following the founder decision of 2026-11-14 that Counterseal is a base wallet with two applications; section numbers removed; provisional logo mark, browser-tab icon and page descriptions added; full footer; contact details supplied by the founder; payments page added. Earlier history is in v0.8. Not cleared for publication. -->
+<meta name="description" content="How the Counterseal wallet works: the phone only proposes, a blockchain decodes and signs, and you confirm on a hardware device. No seed phrase and no private key to steal.">
+<meta property="og:title" content="The wallet · Counterseal">
+<meta property="og:description" content="How the Counterseal wallet works: the phone only proposes, a blockchain decodes and signs, and you confirm on a hardware device. No seed phrase and no private key to steal.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='11.5 1.5 64 60'%3E%3Cpath fill-rule='evenodd' fill='%23f80010' d='M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav" id="pagetop">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Counterseal home"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a>
+    <nav aria-label="Pages"><a href="index.html">Home</a><a href="wallet.html" aria-current="page">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="index.html#series">The heists</a><a href="investors.html">Investors</a><a href="investors.html#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="ctEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9d2d8"/><stop offset=".28" stop-color="#5a666e"/><stop offset=".62" stop-color="#2a3339"/><stop offset="1" stop-color="#9aa6ad"/></linearGradient>
+    <linearGradient id="ctBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#252d33"/><stop offset="1" stop-color="#0c1114"/></linearGradient>
+    <radialGradient id="ctScr" cx=".5" cy=".3" r=".9"><stop offset="0" stop-color="#0c3340"/><stop offset=".6" stop-color="#06202a"/><stop offset="1" stop-color="#03131a"/></radialGradient>
+    <linearGradient id="ctGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".45" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="ctBtn" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#59646b"/><stop offset=".55" stop-color="#262e33"/><stop offset="1" stop-color="#11161a"/></radialGradient>
+    <filter id="ctGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="ctSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+    <clipPath id="ctGlass"><rect x="14" y="14" width="232" height="384" rx="19"/></clipPath>
+  </defs>
+  <symbol id="ct-device" viewBox="0 0 260 440">
+    <ellipse cx="136" cy="420" rx="104" ry="13" fill="#10202b" opacity=".3" filter="url(#ctSoft)"/>
+    <rect x="5" y="6" width="254" height="406" rx="29" fill="#070a0c"/>
+    <rect x="1" y="1" width="254" height="406" rx="29" fill="url(#ctEdge)"/>
+    <rect x="4" y="4" width="248" height="400" rx="26.5" fill="url(#ctBody)"/>
+    <rect x="14" y="14" width="232" height="384" rx="19" fill="#05080a"/>
+    <rect x="20" y="20" width="220" height="300" rx="13" fill="url(#ctScr)"/>
+    <g font-family="IBM Plex Sans, sans-serif">
+      <rect x="34" y="34" width="9" height="8" rx="1.6" fill="#7fd6a4"/><path d="M35.6 34v-2.6a2.9 2.9 0 0 1 5.8 0V34" fill="none" stroke="#7fd6a4" stroke-width="1.5"/>
+      <text x="50" y="42" font-size="11" font-weight="600" fill="#9fc3cc" letter-spacing=".5">COUNTERSEAL</text>
+      <text x="226" y="42" font-size="10.5" fill="#6f909a" text-anchor="end">Verified</text>
+      <text x="34" y="82" font-size="14" fill="#bfe1e8">Send</text>
+      <text x="34" y="118" font-family="Bricolage Grotesque, sans-serif" font-size="33" font-weight="700" fill="#fff" letter-spacing="-.8">250.00</text>
+      <text x="150" y="118" font-size="15" font-weight="600" fill="#8fd0dc">USDC</text>
+      <g stroke="#1c4250" stroke-width="1"><path d="M34 140H226"/><path d="M34 180H226"/><path d="M34 220H226"/><path d="M34 260H226"/></g>
+      <g font-size="11" fill="#6f909a"><text x="34" y="157">To</text><text x="34" y="197">Address</text><text x="34" y="237">Network</text></g>
+      <g font-size="13.5" fill="#e6f4f7" text-anchor="end"><text x="226" y="170">Vendor DCMA</text><text x="226" y="210" font-family="IBM Plex Mono, monospace" font-size="12.5">0x4a33…9fc0</text><text x="226" y="250">Base</text></g>
+      <text x="130" y="296" font-size="11.5" fill="#f2b673" text-anchor="middle">Hold the button to confirm</text>
+    </g>
+    <path d="M14 14H150L52 398H14Z" fill="url(#ctGlare)" clip-path="url(#ctGlass)"/>
+    <circle cx="130" cy="359" r="26" fill="#e8811a" opacity=".75" filter="url(#ctGlow)"/>
+    <circle cx="130" cy="359" r="24" fill="none" stroke="#ffb45e" stroke-width="2.6"/>
+    <circle cx="130" cy="359" r="20" fill="url(#ctBtn)"/>
+    <circle cx="130" cy="359" r="20" fill="none" stroke="#000" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M117 350a16 16 0 0 1 17-6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<div class="pagehead"><div class="wrap"><span class="status">The base · Release 1.0</span><h1>The wallet</h1><p class="lead">A blockchain does the heavy work. A device in your hand shows the result and takes your decision. Your phone only proposes.</p></div></div>
+<section id="how" class="sky">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>Your computer can be hacked. By itself, it still can't move your money.</h2>
+      <p class="lead">In a traditional wallet, your phone or PC prepares the transaction, shows it to you, receives the signature back, and broadcasts it: sends it out to the public network, where it settles. One compromised device controls every step. Counterseal leaves it one job: to propose.</p>
+      <div class="pair">
+        <figure>
+          <span class="lab bad">Today's wallets</span>
+          <img src="img/fig-4-3.jpg" alt="A person holds a phone and a hardware wallet. Red arrows show the transaction going from the phone to the hardware wallet, the signature returning to the phone, and the phone broadcasting it to the blockchains. Each of the three legs is marked as a point of attack.">
+          <figcaption>Three exposed legs. The phone builds the transaction and sends it to the hardware wallet, which often cannot decode it. The signature comes back to the phone, which can hold it, delay it, or keep it for later use. Then the phone broadcasts it through its own network node, which sees your network address and can let others trade ahead of you. Each leg is a separate opening for an attacker.</figcaption>
+        </figure>
+        <figure>
+          <span class="lab good">Counterseal</span>
+          <img src="img/fig-4-4.jpg" alt="The same person holds a phone and a Counterseal Token. The phone sends an untrusted proposal to canister smart contracts on the Internet Computer. The canisters send a confirmation request to the token, which shows Send 250.00 USDC to Vendor DCMA. The token returns the authorization and the canisters broadcast the signed transaction.">
+          <figcaption>The phone only proposes. You confirm by holding the physical button on the device. The Internet Computer broadcasts the signed transaction to the destination chain itself, so there is no return leg and no broadcast from your phone.</figcaption>
+        </figure>
+      </div>
+      <ol class="steps">
+        <li><strong>Your phone proposes</strong>You enter a payment in the wallet app. The app is treated as untrusted. It can ask. It cannot approve.</li>
+        <li><strong>A blockchain checks it</strong>Wallet software running on the Internet Computer rebuilds the transaction, works out what it really does, and applies your limits and rules.</li>
+        <li><strong>You confirm on the device</strong>The Counterseal Token hardware device shows the result on its own screen. You press its button to approve.</li>
+        <li><strong>The blockchain signs and broadcasts</strong>The signature is produced on the Internet Computer, which broadcasts the transaction to the destination chain itself. It never returns to your phone.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section id="device">
+  <div class="wrap sec">
+    <div class="body">
+      <div class="devhero">
+        <div>
+          <h2>The hardware wallet, done right.</h2>
+          <p class="lead">Half of it is in your hand. The other half is a blockchain.</p>
+          <p>The Counterseal Token is slightly larger than a credit card. Its front is one screen and one button. The screen shows what the transaction does, in words. Holding the button is the only way to approve.</p>
+        </div>
+        <figure class="ctfig">
+          <svg viewBox="0 0 320 470" role="img" aria-label="The Counterseal Token: a card-sized device whose front is a screen showing Send 250.00 USDC to Vendor DCMA on Base, above one round button with a lit ring."><use href="#ct-device" x="30" y="14" width="260" height="440" transform="rotate(-6 160 235)"/></svg>
+          <figcaption>Design illustration. The production enclosure is not final.</figcaption>
+        </figure>
+      </div>
+      <div class="grid3">
+        <div class="card"><h3>No seed phrase</h3><p>There are no 12 or 24 words to write down, hide, lose or have stolen.</p></div>
+        <div class="card"><h3>No private key to steal</h3><p>The private key that controls your assets is never assembled in one place. It is not on the device, not on a server, not anywhere. Many independent machines each hold a share and sign together.</p></div>
+        <div class="card"><h3>You hold the authority</h3><p>Nothing is signed without your confirmation on your own device. If you lose the device, you recover with your second one. A recovery is announced, delayed, and can be stopped.</p></div>
+      </div>
+      <p>A traditional hardware wallet is limited to what fits on its small chip. That is why it so often shows a string of characters and asks you to trust your phone. The Counterseal Token has a blockchain behind it to do the heavy work, so the device only has to show you the answer and take your decision. New capability arrives as a governed software update on the blockchain, and the device in your hand stays simple.</p>
+
+      <h3 style="margin-top:14px;font-size:24px">See what you sign. Every time.</h3>
+      <div class="devices">
+        <div class="dev bad">
+          <span class="tag">Blind signing · many hardware wallets today</span>
+          <div class="screen" aria-label="A device screen showing unreadable transaction data">
+            <div>Sign transaction?</div>
+            <div class="hash">0x23b872dd000000000000 000000004a33c1e7b0d5f2 9fc0a0b86991c6218b36c1 d19d4a2e9eb0ce3606eb48 00000000000001f4…</div>
+            <div class="btns"><span>✕ Reject</span><span>Approve ✓</span></div>
+          </div>
+          <h3>Approve what you cannot read</h3>
+          <p class="small">The device shows raw data. To know what it means, you have to believe the phone or web page, which is the thing an attacker changes.</p>
+        </div>
+        <div class="dev good">
+          <span class="tag">Clear Signing · Counterseal Token</span>
+          <div class="screen" aria-label="A device screen showing a readable payment">
+            <div>Send USDC</div>
+            <div class="amt">250.00 USDC</div>
+            <div class="row"><span>To</span><span>Vendor DCMA</span></div>
+            <div class="row"><span>Address</span><span>0x4a33…9fc0</span></div>
+            <div class="row"><span>Network</span><span>Base</span></div>
+            <div class="btns"><span>✕ Reject</span><span>Hold button to confirm</span></div>
+          </div>
+          <h3>Approve what it actually does</h3>
+          <p class="small">The transaction is decoded on the Internet Computer and checked against the contract's own code. The device displays the result on a screen your phone cannot write to.</p>
+        </div>
+      </div>
+      <figure>
+        <img src="img/fig-2-2.jpg" alt="What each Bybit signer saw. On the left, the wallet web page: readable but forged, showing a routine transfer from cold wallet to warm wallet. On the right, the hardware signing device: honest but unreadable, showing raw data in which one field, operation 1, turned a payment into a takeover.">
+        <figcaption>What each Bybit signer saw in February 2025. The readable display was forged, and the honest display was unreadable. Illustrative reconstruction from <a href="heist-2.html">Part 2 of the series</a>.</figcaption>
+      </figure>
+      <div class="callout"><p><strong>Where the decoding happens matters.</strong> A hacked phone can decode a transaction falsely. A shared cloud service can be changed by an attacker. A small device has too little memory to decode complex transactions, and it should stay isolated from the network. So Counterseal decodes on a blockchain and displays on the device. Counterseal supports Clear Signing (the open ERC-7730 standard) on Ethereum-compatible chains, and applies the same full decoding on the other chains it supports.</p></div>
+    </div>
+  </div>
+</section>
+<section id="recovery" class="mint">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>No seed phrase. So where is the trick?</h2>
+      <p class="lead">Every informed reader asks this. The answer is in six steps.</p>
+      <div class="qa">
+        <div><b>1. Why did wallets need a seed phrase at all?</b><span>Because the device holds the only copy of the private key that moves the funds. If the device is lost, the key is lost, so the user must keep a second copy. The seed phrase is that copy, written on paper. Anyone who finds the paper has the funds.</span></div>
+        <div><b>2. Why does Counterseal not need one?</b><span>Because the private key that controls the assets was never on the device, and is never assembled anywhere. Independent machines of the Internet Computer each hold a share and sign together, and only when the account's rules are met. Losing the device loses no key. A bank card is the nearest comparison: the money was never in the card.</span></div>
+        <div><b>3. Then what did I lose with the device?</b><span>Your means of proving that you are the account holder. Recovery is the act of registering a replacement device as yours. The secrets the old device used to read your private records are not stored anywhere. The network derives them again and delivers them, encrypted, to the new device alone.</span></div>
+        <div><b>4. What stops a thief from "recovering" my account?</b><span>A recovery must meet rules you set in advance. Every attempt is announced to all your registered devices and contacts. It takes effect only after a delay, and during the delay you can stop it. No company can perform a recovery for you, because no company holds a recovery path unless you choose to create one.</span></div>
+        <div><b>5. So where did the trust go?</b><span>It moved. Before, you guarded one paper secret for life, and anyone who saw it once could take everything. Now you keep the means of proof you chose, and you rely on a blockchain to enforce your rules. Three exposures remain: losing every chosen means at the same time; a change to the code, which requires a public governance vote with notice and a period in which subscribers can leave; and the Internet Computer itself, if more than one third of the machines running the wallet acted together.</span></div>
+        <div><b>6. Other wallets also dropped the seed phrase. What is different?</b><span>Some kept the private key and copied it onto several cards, so each card is as dangerous to lose as the paper was. Others split the key with a company, so the company's servers must be working and willing before you can sign. Counterseal leaves no copy of the key with the user and no share with a company.</span></div>
+      </div>
+      <div class="callout" style="border-left-color:#1b8a5a"><p><strong>Still being designed.</strong> The means of recovery will include a second Counterseal Token, several independent authentication factors, and approval by people or devices you have chosen. The minimum set, the length of the delay, and what happens when every means is lost are not final. We will publish the full design.</p></div>
+      <h3 style="margin-top:14px;font-size:24px">If the service itself fails</h3>
+      <p>This is a different question from losing a device. A standby copy of the wallet service is set up in advance. It takes over when conditions that can be checked objectively are met, such as the main service failing to respond for a set period. No person decides, no company has to act, and no bankruptcy can freeze it. From that moment the old service has no authority, so two services can never both sign.</p>
+    </div>
+  </div>
+</section>
+<section id="who">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>Who runs it: no company is in the signing path.</h2>
+      <p class="lead">On this site, "Counterseal" means the framework and the organization that governs it. The founding company is always written "Counterseal, Inc."</p>
+      <div class="grid2">
+        <div class="card"><h3>Nobody holds the key</h3><p>The private key that controls the assets is never assembled. Its shares are held by independent machines of the Internet Computer. Counterseal, Inc. holds no share.</p></div>
+        <div class="card"><h3>Only you can authorize</h3><p>Nothing is signed without your confirmation on your own device. No company, node operator or governance vote can substitute for it.</p></div>
+        <div class="card"><h3>Changes are public</h3><p>The code is open. Before any subscriber's funds are admitted, control of the service is planned to pass to its token holders through on-chain governance. Every change then needs a public vote, with a period in which subscribers can leave.</p></div>
+        <div class="card"><h3>What Counterseal, Inc. does</h3><p>It develops and publishes the software and the device design, and offers a device as one manufacturer among possibly several. It does not operate the service and does not receive its fees.</p></div>
+      </div>
+      <p class="small">Stated plainly: governance by token holders relocates trust, it does not remove it, and it is not presumed to be a shield against legal liability.</p>
+    </div>
+  </div>
+</section>
+<section class="ctaband"><div class="wrap"><h2>The wallet is the base for three applications: payments, the private balance and weaving.</h2><div class="cta"><a class="btn" href="investors.html#contact">Request the investor presentation</a><a class="btn alt" href="investors.html">Questions investors ask</a></div></div></section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><a class="brand" href="index.html"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a><p class="small">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p></div>
+      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
+      <div><h4>The heists</h4><a href="heist-1.html">Part 1: The Locked Room</a><a href="heist-2.html">Part 2: The Trail Out the Door</a><a href="heist-3.html">Part 3: No Backstop</a><a href="heist-4.html">Part 4: Fifty Signatures</a></div>
+      <div><h4>Company</h4><a href="investors.html">For investors</a><a href="investors.html#today">Status and patents</a><a href="investors.html#contact">Contact</a><a href="mailto:alathrop2000@gmail.com">alathrop2000@gmail.com</a></div>
+    </div>
+    <p class="small legal">© 2026 Counterseal, Inc. In development; not yet available. Nothing on this site is an offer to sell a product, a token or a security. Bybit, Binance, Railgun, Zcash, GNU Taler, Safe and other names belong to their owners and are used only to describe public events and public designs.</p>
+  </div>
+</footer>
+
+<script>
+/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. */
+(function(){function up(){if(location.hash.length>1)return;try{window.scrollTo(0,0);var t=document.getElementById("top");if(t&&t.scrollIntoView)t.scrollIntoView({block:"start"});}catch(e){}}
+if("scrollRestoration" in history){try{history.scrollRestoration="manual";}catch(e){}}
+up();window.addEventListener("pageshow",up);window.addEventListener("load",up);})();
+</script>
+</body>
+</html>

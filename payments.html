@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payments · Counterseal</title>
+<!-- Counterseal_Website_Draft_v0_25 · 2026-11-14 · v0.25: weaving described as broader than matching, at the founder request of 2026-11-15: new section Weaving is more than matching with a new diagram and five forms (match, combine, change the route, choose the block builder, deliver privately); value section reduced to return and receipt, with the statement of who receives the value moved into it; definition, step text, home card and the investor answer on trade execution extended to match; the old diagram, which showed a Bitcoin payment and the labels no exchange fee and nobody sees your order first, is replaced. v0.24: investor question on trade execution answered at more length at the founder request of 2026-11-15: the converging unsigned flow as the advantage, the sign-first constraint of other wallets with MetaMask Smart Transactions as the example, weaving as the use of the flow. v0.23: weaving page, definition of weaving rewritten at the founder request of 2026-11-15 to state the advantage: an ordinary wallet signs first, so a collected transaction can only be ordered; Counterseal signs last, so it can still be matched, merged or rearranged; the phrase on serving the owner best removed. v0.22: the status line made inconspicuous at the founder request of 2026-11-15: left-aligned at the bottom of the first dark block, smaller, muted grey, without its outline. v0.21: the status line (In development, not yet available) moved from above the headline to the bottom of the first dark block, below the two buttons, at the founder request of 2026-11-15. v0.20: the triangle mark confirmed by the founder on 2026-11-15 as the provisional logo, shared with Ai-Fi for now; browser-tab icon files added (favicon.ico and apple-touch-icon.png) beside the drawn icon; img/counterseal-logo-provisional.svg now holds the triangle mark and the twin-peaks drawing is removed; buttons and links keep the darker red because white text on it is easier to read. v0.19: trial of a different logo mark at the founder request of 2026-11-15: the triangle mark from the supplied icon file, redrawn without its lettering, in its red (#f80010); the same red applied to the superscript 2 and the statistics figures; the twin-peaks mark is kept in img/ for comparison. v0.18: mixed colour scheme chosen by the founder on 2026-11-15: dark menu bar, page headings, closing band and footer; white and pale grey reading sections in place of the pale coloured ones; no change to any text. v0.17: weaving added as a third application with its own page, following the founder decision of 2026-11-15; the section on value returned from transactions moved from the wallet page to it; home page now shows the wallet and three applications. v0.16: home page, theft section: four published figures on where losses occur (Chainalysis) and a statement that the weaknesses are structural; investors page: new question on a blockchain versus company-run servers, stating in full what a subscriber relies on. v0.15: home page, the second of the three industry problems corrected: hardware wallets now handle shielded Zcash (Ledger since September 2026, Keystone earlier), so the statement that no hardware wallet offers private payments was too broad. v0.14: the home-page diagram now shows six named blockchains and a marker for many more, in place of three chains and two stablecoins; the caption names stablecoins as assets. v0.13: the device in the home-page diagram is now tilted and larger, matching the illustration on the wallet page. v0.12: the superscript 2 is now red, in the headline formula and on the second explanation card; the first card title and its top border are now dark, so the three cards carry the same colours as the three parts of the headline. v0.11: the second explanation card on the home page is now titled with the whole term, the word in grey and the superscript 2 in violet at full size, in place of a lone small superscript. v0.10: logo changed to the twin-peaks mark (option A1) in bright red; site colours changed from teal to red to match; attack warnings changed from red to dark grey so the brand colour is not the warning colour. v0.9: split into pages (home, the wallet, payments, private balance, investors) following the founder decision of 2026-11-14 that Counterseal is a base wallet with two applications; section numbers removed; provisional logo mark, browser-tab icon and page descriptions added; full footer; contact details supplied by the founder; payments page added. Earlier history is in v0.8. Not cleared for publication. -->
+<meta name="description" content="A stablecoin payment application on the Counterseal wallet, for commerce and for software agents, with limits enforced by the service and shown on the device.">
+<meta property="og:title" content="Payments · Counterseal">
+<meta property="og:description" content="A stablecoin payment application on the Counterseal wallet, for commerce and for software agents, with limits enforced by the service and shown on the device.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='11.5 1.5 64 60'%3E%3Cpath fill-rule='evenodd' fill='%23f80010' d='M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav" id="pagetop">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Counterseal home"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a>
+    <nav aria-label="Pages"><a href="index.html">Home</a><a href="wallet.html">The wallet</a><a href="payments.html" aria-current="page">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="index.html#series">The heists</a><a href="investors.html">Investors</a><a href="investors.html#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="ctEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9d2d8"/><stop offset=".28" stop-color="#5a666e"/><stop offset=".62" stop-color="#2a3339"/><stop offset="1" stop-color="#9aa6ad"/></linearGradient>
+    <linearGradient id="ctBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#252d33"/><stop offset="1" stop-color="#0c1114"/></linearGradient>
+    <radialGradient id="ctScr" cx=".5" cy=".3" r=".9"><stop offset="0" stop-color="#0c3340"/><stop offset=".6" stop-color="#06202a"/><stop offset="1" stop-color="#03131a"/></radialGradient>
+    <linearGradient id="ctGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".45" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="ctBtn" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#59646b"/><stop offset=".55" stop-color="#262e33"/><stop offset="1" stop-color="#11161a"/></radialGradient>
+    <filter id="ctGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="ctSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+    <clipPath id="ctGlass"><rect x="14" y="14" width="232" height="384" rx="19"/></clipPath>
+  </defs>
+  <symbol id="ct-device" viewBox="0 0 260 440">
+    <ellipse cx="136" cy="420" rx="104" ry="13" fill="#10202b" opacity=".3" filter="url(#ctSoft)"/>
+    <rect x="5" y="6" width="254" height="406" rx="29" fill="#070a0c"/>
+    <rect x="1" y="1" width="254" height="406" rx="29" fill="url(#ctEdge)"/>
+    <rect x="4" y="4" width="248" height="400" rx="26.5" fill="url(#ctBody)"/>
+    <rect x="14" y="14" width="232" height="384" rx="19" fill="#05080a"/>
+    <rect x="20" y="20" width="220" height="300" rx="13" fill="url(#ctScr)"/>
+    <g font-family="IBM Plex Sans, sans-serif">
+      <rect x="34" y="34" width="9" height="8" rx="1.6" fill="#7fd6a4"/><path d="M35.6 34v-2.6a2.9 2.9 0 0 1 5.8 0V34" fill="none" stroke="#7fd6a4" stroke-width="1.5"/>
+      <text x="50" y="42" font-size="11" font-weight="600" fill="#9fc3cc" letter-spacing=".5">COUNTERSEAL</text>
+      <text x="226" y="42" font-size="10.5" fill="#6f909a" text-anchor="end">Verified</text>
+      <text x="34" y="82" font-size="14" fill="#bfe1e8">Send</text>
+      <text x="34" y="118" font-family="Bricolage Grotesque, sans-serif" font-size="33" font-weight="700" fill="#fff" letter-spacing="-.8">250.00</text>
+      <text x="150" y="118" font-size="15" font-weight="600" fill="#8fd0dc">USDC</text>
+      <g stroke="#1c4250" stroke-width="1"><path d="M34 140H226"/><path d="M34 180H226"/><path d="M34 220H226"/><path d="M34 260H226"/></g>
+      <g font-size="11" fill="#6f909a"><text x="34" y="157">To</text><text x="34" y="197">Address</text><text x="34" y="237">Network</text></g>
+      <g font-size="13.5" fill="#e6f4f7" text-anchor="end"><text x="226" y="170">Vendor DCMA</text><text x="226" y="210" font-family="IBM Plex Mono, monospace" font-size="12.5">0x4a33…9fc0</text><text x="226" y="250">Base</text></g>
+      <text x="130" y="296" font-size="11.5" fill="#f2b673" text-anchor="middle">Hold the button to confirm</text>
+    </g>
+    <path d="M14 14H150L52 398H14Z" fill="url(#ctGlare)" clip-path="url(#ctGlass)"/>
+    <circle cx="130" cy="359" r="26" fill="#e8811a" opacity=".75" filter="url(#ctGlow)"/>
+    <circle cx="130" cy="359" r="24" fill="none" stroke="#ffb45e" stroke-width="2.6"/>
+    <circle cx="130" cy="359" r="20" fill="url(#ctBtn)"/>
+    <circle cx="130" cy="359" r="20" fill="none" stroke="#000" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M117 350a16 16 0 0 1 17-6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<div class="pagehead"><div class="wrap"><span class="status">Application · planned for Release 2.0</span><h1>Payments for commerce and for software agents</h1><p class="lead">A stablecoin payment application that runs on the Counterseal wallet. The owner sets the limits. The device shows them.</p></div></div>
+<section id="pay-what">
+  <div class="wrap"><div class="body">
+    <h2>What it does.</h2>
+    <div class="grid3">
+      <div class="card"><span class="tag">Open standard</span><h3>Built for x402</h3><p>x402 is an open standard that lets a web service ask for payment in a stablecoin as part of an ordinary web request. The application is designed to settle x402 payments.</p></div>
+      <div class="card"><span class="tag">Payer privacy</span><h3>The settlement service cannot tell which account paid</h3><p>The design follows the architecture of GNU Taler, a payment system built so that the party settling a payment cannot link it to the payer.</p></div>
+      <div class="card"><span class="tag">Software agents</span><h3>Limits an agent cannot exceed</h3><p>An AI agent can be given a budget, a list of permitted sellers and a time limit. The service enforces the limits and your device shows them. The agent never holds the authority to change them.</p></div>
+    </div>
+  </div></div>
+</section>
+<section id="pay-how" class="sky">
+  <div class="wrap"><div class="body">
+    <h2>How it uses the wallet.</h2>
+    <ol class="steps">
+      <li><strong>You set aside funds</strong>You move a stablecoin amount from your wallet into the payment application and confirm it on your device.</li>
+      <li><strong>You set the limits</strong>For yourself or for an agent: how much, to whom, and until when. The device shows the limits before you confirm them.</li>
+      <li><strong>Payments run inside the limits</strong>Each payment is checked by the service against the limits. Nothing outside them is paid.</li>
+      <li><strong>You can stop it</strong>You can lower a limit or withdraw the remaining funds at any time, confirmed on your device.</li>
+    </ol>
+    <div class="callout"><p><strong>Status.</strong> The payment application is planned for Release 2.0 and is not built. It is a separate service from the wallet. How it is governed and operated is being decided separately, and may differ from the wallet's arrangement.</p></div>
+  </div></div>
+</section>
+<section class="ctaband"><div class="wrap"><h2>The payment application is described in more detail in the investor presentation.</h2><div class="cta"><a class="btn" href="investors.html#contact">Request the investor presentation</a><a class="btn alt" href="investors.html">Questions investors ask</a></div></div></section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><a class="brand" href="index.html"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a><p class="small">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p></div>
+      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
+      <div><h4>The heists</h4><a href="heist-1.html">Part 1: The Locked Room</a><a href="heist-2.html">Part 2: The Trail Out the Door</a><a href="heist-3.html">Part 3: No Backstop</a><a href="heist-4.html">Part 4: Fifty Signatures</a></div>
+      <div><h4>Company</h4><a href="investors.html">For investors</a><a href="investors.html#today">Status and patents</a><a href="investors.html#contact">Contact</a><a href="mailto:alathrop2000@gmail.com">alathrop2000@gmail.com</a></div>
+    </div>
+    <p class="small legal">© 2026 Counterseal, Inc. In development; not yet available. Nothing on this site is an offer to sell a product, a token or a security. Bybit, Binance, Railgun, Zcash, GNU Taler, Safe and other names belong to their owners and are used only to describe public events and public designs.</p>
+  </div>
+</footer>
+
+<script>
+/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. */
+(function(){function up(){if(location.hash.length>1)return;try{window.scrollTo(0,0);var t=document.getElementById("top");if(t&&t.scrollIntoView)t.scrollIntoView({block:"start"});}catch(e){}}
+if("scrollRestoration" in history){try{history.scrollRestoration="manual";}catch(e){}}
+up();window.addEventListener("pageshow",up);window.addEventListener("load",up);})();
+</script>
+</body>
+</html>

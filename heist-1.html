@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Locked Room · Heist Series Part 1</title>
+<!-- Counterseal_Website_Draft_v0_25 · article page generated from the heist series text (series archive v9: Parts 1 to 4 at v1.3, v1.4, v1.4, v1.6) with the figures, In brief boxes and pull quotes of the PDF edition v2. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='11.5 1.5 64 60'%3E%3Cpath fill-rule='evenodd' fill='%23f80010' d='M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z'/%3E%3C/svg%3E">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Counterseal home"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a>
+<nav aria-label="Series"><a href="heist-1.html" aria-current="page" style="color:var(--seal);font-weight:600">Part 1</a><a href="heist-2.html">Part 2</a><a href="heist-3.html">Part 3</a><a href="heist-4.html">Part 4</a><a href="index.html">Home</a><a href="investors.html#contact">Contact</a></nav>
+</div></header>
+<main id="top">
+<div class="arthead"><div class="wrap">
+<div class="series">Anatomy of the Largest Heists in History · Part 1 of 4</div>
+<h1>The Locked Room</h1>
+<p class="stand">In February 2025, $1.5 billion left a sealed vault while every guard
+did their job. This is the first of a four-part reconstruction: the
+crime and the comfortable, wrong explanation. Part 2 follows the trail
+to what actually happened. Part 3 asks the harder question — why, in
+this corner of finance, there is no one to put the money back. Part 4
+follows the same attacker to the October 2026 Binance theft, four times
+larger.</p>
+</div></div>
+<article class="article">
+<div class="brief"><b>IN BRIEF</b><ul><li>In February 2025, $1.5 billion left Bybit, one of the world’s largest crypto exchanges, while every signer followed procedure.</li><li>The first explanation — careless signers — was wrong: they read one transaction and signed another.</li><li>Finding out how means leaving Bybit entirely.</li></ul></div>
+<h2 id="the-ceremony">The ceremony</h2>
+<p>Start with the room, because the room is the whole mystery.</p>
+<p>On February 21, 2025, a handful of senior people at Bybit — one of
+the largest cryptocurrency exchanges in the world — sat down to move
+money. Not unusual money for them: a routine sweep from one of the
+exchange’s Ethereum cold wallets, the deep-storage tier kept offline
+precisely because it holds the most, into a working wallet used for
+daily business. They had done this many times. There was a
+procedure.</p>
+<p>The procedure was good. The wallet was a <em>multi-signature</em>
+wallet, which means no single person could move anything from it. It
+took several of them, each approving independently, each on their own
+dedicated hardware signing device — the kind of small, purpose-built
+gadget whose entire reason to exist is that it cannot be casually
+tampered with. The wallet was built on Safe, formerly Gnosis Safe: the
+most widely used, most heavily audited smart-contract wallet in the
+entire industry, holding billions of dollars for thousands of
+organizations. Choosing Safe was not a gamble. It was the conservative,
+boring, everyone-does-it choice.</p>
+<p>Each signer pulled up the transaction. Each looked at the screen —
+the Safe web app, open in a browser, showing the transaction in plain
+language. Each saw a normal transfer: the right destination, the right
+amount, the familiar interface, the address bar showing the real Safe
+web address. Each then approved it on a dedicated hardware device, which
+has a small screen of its own. Each checked what they had been trained
+to check. Each was satisfied. Each approved, on a device held in their
+own hand.</p>
+<p>Within minutes, roughly 401,000 ETH and a large stETH position —
+about <strong>$1.5 billion</strong> — were gone. Swept to an address
+belonging to someone none of them had ever heard of, and from there,
+almost immediately, scattering.</p>
+<p>When it happened, it was the largest single theft on record: larger
+than any bank robbery or gold heist. (Five months later, analysts
+disclosed an older loss that had never been reported: bitcoin worth
+about $3.5 billion at the time, taken from the Chinese mining pool
+LuBian in December 2020.) Among thefts made public when they happened,
+Bybit’s stayed the largest for twenty months, until the same attacker
+took more than four times as much from Binance. That theft is the
+subject of Part 4.</p>
+<figure>
+<img src="img/fig-1-1.jpg" alt="Bar chart of the largest thefts on record, led by Binance at 6.3 billion dollars and Bybit at 1.5 billion dollars.">
+<figcaption>
+Figure 1.1. The largest thefts on record, in US dollars at the time of
+the theft. Bybit held the record for twenty months; Binance took it in
+October 2026. Both are attributed by the FBI to the same North Korean
+unit.
+</figcaption>
+</figure>
+<p>One figure is worth fixing in place now, because the headline number
+misleads almost everyone who hears it — the author included, until the
+records were laid side by side. The <em>theft</em> was real and roughly
+$1.4–1.5 billion; despite a fast, well-publicized recovery effort, only
+single-digit percentages were ever frozen, and the bulk was laundered
+into Bitcoin within days. What was <em>not</em> lost was the customers’
+money — and the reason is a thread worth holding onto, because it runs
+through all four parts of this story: customer balances came through
+intact not because the funds were recovered, but because a solvent
+company chose to absorb the loss. The theft was enormous. The customer
+loss was near zero. The distance between those two numbers is a
+company’s balance sheet — and we will come back, in Part 3, to what
+happens when there isn’t one.</p>
+<h2 id="the-sealed-room">The sealed room</h2>
+<p>Here is the thing that should stop you, the thing nearly every
+account of this got backwards: <strong>the people in that room did
+nothing wrong.</strong></p>
+<p>They followed the procedure. They used the secure hardware. They
+looked at the screen and approved what it showed them. By every standard
+the industry had taught them, they were careful. And $1.5 billion left
+anyway.</p>
+<p>This is a locked-room mystery in the oldest sense. The vault was
+sealed. The guards were awake, trained, and competent. Every key turned,
+in the right order, by the right hands. Nothing was forced, nothing was
+picked, no alarm sounded. And the gold still vanished — not from a
+weakness anyone in the room could see, touch, or test.</p>
+<p>The temptation, with a mystery like this, is to skip to the end. We
+already know <em>who</em> did it; that part was never really hidden, and
+we will name them in Part 2. But “who took it” is the least interesting
+question here, the way the identity of the burglar is the least
+interesting thing about a good locked-room story. The interesting
+question — the one a real detective is forced to ask when the door was
+bolted from the inside — is the harder one:</p>
+<p><strong>How was the room open the entire time, and why could no one
+standing in it tell?</strong></p>
+<h2 id="the-convenient-suspects">The convenient suspects</h2>
+<p>The first answers were the comfortable ones, and comfort is always
+the detective’s enemy.</p>
+<p>Within a day, the consensus had formed: the signers were careless.
+They had <em>blind-signed</em> — rubber-stamped a transaction they
+didn’t really understand. It fit a familiar story shape, the one we
+reach for whenever a great deal of money disappears: somebody got
+sloppy. An exchange got lazy with its security. Human error,
+preventable, theirs.</p>
+<p>It is worth being honest about why that story is so attractive,
+because the attraction is itself the trap. If the signers were careless,
+then <em>you</em> — careful, attentive, not the sort to get lazy with a
+billion dollars — are safe. The failure belongs to them. You can file it
+under <em>don’t be careless</em> and sleep soundly.</p>
+<p>The forensic record does not let you sleep. In the weeks after the
+heist, a small army of independent security firms took the attack apart
+— Sygnia and Verichains, retained to investigate; Hacken, NCC Group,
+Check Point, SlowMist and others publishing their own reconstructions —
+and Bybit released its own findings. They disagreed about emphasis, and
+they disagreed, pointedly, about blame. They did not disagree about the
+mechanism. And the mechanism exonerates the room.</p>
+<p>Because the signers were not careless people who failed to read a
+transaction. They were careful people who read a transaction — and
+signed a <em>different</em> one. The thing they approved on their
+screens and the thing their devices actually committed to were not the
+same thing, and the gap between them had been engineered, deliberately,
+with patience, by someone who was never anywhere near that room.</p>
+<div class="pull">
+“They were careful people who read a transaction — and signed a
+different one.”
+</div>
+<p>Which means the careless-signer story isn’t just wrong. It is the
+cover the attack was <em>designed</em> to hide behind — the comfortable
+explanation left lying around precisely so the rest of us would pick it
+up and stop looking.</p>
+<p>So we have to keep looking. And to find where the room was actually
+breached, you have to do the one thing every account that blamed the
+signers refused to do.</p>
+<p><strong>You have to leave the room — walk out of Bybit entirely, and
+follow the trail backward into the build pipeline of a company most of
+the victims had never thought about.</strong></p>
+<p><em>That trail, and what waited at the end of it, is Part 2:
+<strong>The Trail Out the Door.</strong></em></p>
+<hr />
+<p><em>This is Part 1 of a four-part reconstruction. Parts 1 to 3 cover
+the February 2025 Bybit heist. Part 2 follows the forensic trail to the
+true mechanism — and to what the signers actually saw. Part 3, “No
+Backstop,” asks why crypto, unlike the banking system it increasingly
+resembles, has almost no way to make a victim whole — and what would
+have to change. Part 4, “Fifty Signatures,” reconstructs the October
+2026 Binance theft by the same attacker.</em></p>
+<p><em>This series is published by a team building signing and
+coordination architecture of the kind discussed in Part 3; it references
+its own prototype work there, by way of illustration. The reconstruction
+stands on the public record. Specific figures and the attack timeline
+are drawn from public forensic reports (Bybit, Safe, Mandiant, Sygnia,
+Verichains, Hacken, NCC Group, Check Point, SlowMist, Elastic Security
+Labs and others) and should be re-verified against primary sources
+before publication.</em></p>
+
+<div class="pager"><a href="index.html">← Main page</a><a href="heist-2.html">Part 2: The Trail Out the Door →</a></div>
+</article>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><a class="brand" href="index.html"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a><p class="small">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p></div>
+      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
+      <div><h4>The heists</h4><a href="heist-1.html">Part 1: The Locked Room</a><a href="heist-2.html">Part 2: The Trail Out the Door</a><a href="heist-3.html">Part 3: No Backstop</a><a href="heist-4.html">Part 4: Fifty Signatures</a></div>
+      <div><h4>Company</h4><a href="investors.html">For investors</a><a href="investors.html#today">Status and patents</a><a href="investors.html#contact">Contact</a><a href="mailto:alathrop2000@gmail.com">alathrop2000@gmail.com</a></div>
+    </div>
+    <p class="small legal">© 2026 Counterseal, Inc. In development; not yet available. Nothing on this site is an offer to sell a product, a token or a security. Bybit, Binance, Railgun, Zcash, GNU Taler, Safe and other names belong to their owners and are used only to describe public events and public designs.</p>
+  </div>
+</footer>
+<script>
+/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. */
+(function(){function up(){if(location.hash.length>1)return;try{window.scrollTo(0,0);var t=document.getElementById("top");if(t&&t.scrollIntoView)t.scrollIntoView({block:"start"});}catch(e){}}
+if("scrollRestoration" in history){try{history.scrollRestoration="manual";}catch(e){}}
+up();window.addEventListener("pageshow",up);window.addEventListener("load",up);})();
+</script>
+</body></html>

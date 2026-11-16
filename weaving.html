@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weaving · Counterseal</title>
+<!-- Counterseal_Website_Draft_v0_25 · 2026-11-14 · v0.25: weaving described as broader than matching, at the founder request of 2026-11-15: new section Weaving is more than matching with a new diagram and five forms (match, combine, change the route, choose the block builder, deliver privately); value section reduced to return and receipt, with the statement of who receives the value moved into it; definition, step text, home card and the investor answer on trade execution extended to match; the old diagram, which showed a Bitcoin payment and the labels no exchange fee and nobody sees your order first, is replaced. v0.24: investor question on trade execution answered at more length at the founder request of 2026-11-15: the converging unsigned flow as the advantage, the sign-first constraint of other wallets with MetaMask Smart Transactions as the example, weaving as the use of the flow. v0.23: weaving page, definition of weaving rewritten at the founder request of 2026-11-15 to state the advantage: an ordinary wallet signs first, so a collected transaction can only be ordered; Counterseal signs last, so it can still be matched, merged or rearranged; the phrase on serving the owner best removed. v0.22: the status line made inconspicuous at the founder request of 2026-11-15: left-aligned at the bottom of the first dark block, smaller, muted grey, without its outline. v0.21: the status line (In development, not yet available) moved from above the headline to the bottom of the first dark block, below the two buttons, at the founder request of 2026-11-15. v0.20: the triangle mark confirmed by the founder on 2026-11-15 as the provisional logo, shared with Ai-Fi for now; browser-tab icon files added (favicon.ico and apple-touch-icon.png) beside the drawn icon; img/counterseal-logo-provisional.svg now holds the triangle mark and the twin-peaks drawing is removed; buttons and links keep the darker red because white text on it is easier to read. v0.19: trial of a different logo mark at the founder request of 2026-11-15: the triangle mark from the supplied icon file, redrawn without its lettering, in its red (#f80010); the same red applied to the superscript 2 and the statistics figures; the twin-peaks mark is kept in img/ for comparison. v0.18: mixed colour scheme chosen by the founder on 2026-11-15: dark menu bar, page headings, closing band and footer; white and pale grey reading sections in place of the pale coloured ones; no change to any text. v0.17: weaving added as a third application with its own page, following the founder decision of 2026-11-15; the section on value returned from transactions moved from the wallet page to it; home page now shows the wallet and three applications. v0.16: home page, theft section: four published figures on where losses occur (Chainalysis) and a statement that the weaknesses are structural; investors page: new question on a blockchain versus company-run servers, stating in full what a subscriber relies on. v0.15: home page, the second of the three industry problems corrected: hardware wallets now handle shielded Zcash (Ledger since September 2026, Keystone earlier), so the statement that no hardware wallet offers private payments was too broad. v0.14: the home-page diagram now shows six named blockchains and a marker for many more, in place of three chains and two stablecoins; the caption names stablecoins as assets. v0.13: the device in the home-page diagram is now tilted and larger, matching the illustration on the wallet page. v0.12: the superscript 2 is now red, in the headline formula and on the second explanation card; the first card title and its top border are now dark, so the three cards carry the same colours as the three parts of the headline. v0.11: the second explanation card on the home page is now titled with the whole term, the word in grey and the superscript 2 in violet at full size, in place of a lone small superscript. v0.10: logo changed to the twin-peaks mark (option A1) in bright red; site colours changed from teal to red to match; attack warnings changed from red to dark grey so the brand colour is not the warning colour. v0.9: split into pages (home, the wallet, payments, private balance, investors) following the founder decision of 2026-11-14 that Counterseal is a base wallet with two applications; section numbers removed; provisional logo mark, browser-tab icon and page descriptions added; full footer; contact details supplied by the founder; payments page added. Earlier history is in v0.8. Not cleared for publication. -->
+<meta name="description" content="Counterseal combines subscribers confirmed transactions on a blockchain before signing them: matching, combining, choice of route and block builder, private delivery, and savings returned to their owners.">
+<meta property="og:title" content="Weaving · Counterseal">
+<meta property="og:description" content="Counterseal combines subscribers confirmed transactions on a blockchain before signing them: matching, combining, choice of route and block builder, private delivery, and savings returned to their owners.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='11.5 1.5 64 60'%3E%3Cpath fill-rule='evenodd' fill='%23f80010' d='M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav" id="pagetop">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Counterseal home"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a>
+    <nav aria-label="Pages"><a href="index.html">Home</a><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html" aria-current="page">Weaving</a><a href="index.html#series">The heists</a><a href="investors.html">Investors</a><a href="investors.html#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="ctEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9d2d8"/><stop offset=".28" stop-color="#5a666e"/><stop offset=".62" stop-color="#2a3339"/><stop offset="1" stop-color="#9aa6ad"/></linearGradient>
+    <linearGradient id="ctBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#252d33"/><stop offset="1" stop-color="#0c1114"/></linearGradient>
+    <radialGradient id="ctScr" cx=".5" cy=".3" r=".9"><stop offset="0" stop-color="#0c3340"/><stop offset=".6" stop-color="#06202a"/><stop offset="1" stop-color="#03131a"/></radialGradient>
+    <linearGradient id="ctGlare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".45" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="ctBtn" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#59646b"/><stop offset=".55" stop-color="#262e33"/><stop offset="1" stop-color="#11161a"/></radialGradient>
+    <filter id="ctGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="ctSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+    <clipPath id="ctGlass"><rect x="14" y="14" width="232" height="384" rx="19"/></clipPath>
+  </defs>
+  <symbol id="ct-device" viewBox="0 0 260 440">
+    <ellipse cx="136" cy="420" rx="104" ry="13" fill="#10202b" opacity=".3" filter="url(#ctSoft)"/>
+    <rect x="5" y="6" width="254" height="406" rx="29" fill="#070a0c"/>
+    <rect x="1" y="1" width="254" height="406" rx="29" fill="url(#ctEdge)"/>
+    <rect x="4" y="4" width="248" height="400" rx="26.5" fill="url(#ctBody)"/>
+    <rect x="14" y="14" width="232" height="384" rx="19" fill="#05080a"/>
+    <rect x="20" y="20" width="220" height="300" rx="13" fill="url(#ctScr)"/>
+    <g font-family="IBM Plex Sans, sans-serif">
+      <rect x="34" y="34" width="9" height="8" rx="1.6" fill="#7fd6a4"/><path d="M35.6 34v-2.6a2.9 2.9 0 0 1 5.8 0V34" fill="none" stroke="#7fd6a4" stroke-width="1.5"/>
+      <text x="50" y="42" font-size="11" font-weight="600" fill="#9fc3cc" letter-spacing=".5">COUNTERSEAL</text>
+      <text x="226" y="42" font-size="10.5" fill="#6f909a" text-anchor="end">Verified</text>
+      <text x="34" y="82" font-size="14" fill="#bfe1e8">Send</text>
+      <text x="34" y="118" font-family="Bricolage Grotesque, sans-serif" font-size="33" font-weight="700" fill="#fff" letter-spacing="-.8">250.00</text>
+      <text x="150" y="118" font-size="15" font-weight="600" fill="#8fd0dc">USDC</text>
+      <g stroke="#1c4250" stroke-width="1"><path d="M34 140H226"/><path d="M34 180H226"/><path d="M34 220H226"/><path d="M34 260H226"/></g>
+      <g font-size="11" fill="#6f909a"><text x="34" y="157">To</text><text x="34" y="197">Address</text><text x="34" y="237">Network</text></g>
+      <g font-size="13.5" fill="#e6f4f7" text-anchor="end"><text x="226" y="170">Vendor DCMA</text><text x="226" y="210" font-family="IBM Plex Mono, monospace" font-size="12.5">0x4a33…9fc0</text><text x="226" y="250">Base</text></g>
+      <text x="130" y="296" font-size="11.5" fill="#f2b673" text-anchor="middle">Hold the button to confirm</text>
+    </g>
+    <path d="M14 14H150L52 398H14Z" fill="url(#ctGlare)" clip-path="url(#ctGlass)"/>
+    <circle cx="130" cy="359" r="26" fill="#e8811a" opacity=".75" filter="url(#ctGlow)"/>
+    <circle cx="130" cy="359" r="24" fill="none" stroke="#ffb45e" stroke-width="2.6"/>
+    <circle cx="130" cy="359" r="20" fill="url(#ctBtn)"/>
+    <circle cx="130" cy="359" r="20" fill="none" stroke="#000" stroke-opacity=".55" stroke-width="1"/>
+    <path d="M117 350a16 16 0 0 1 17-6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<div class="pagehead"><div class="wrap"><span class="status">Application</span><h1>Weaving</h1><p class="lead">Subscribers’ transactions are combined on a blockchain before they are signed, with no company and no outside party in the middle.</p></div></div>
+<section id="weave-what">
+  <div class="wrap"><div class="body">
+    <h2>Two words, defined.</h2>
+    <div class="grid2">
+      <div class="card"><span class="tag">Orderflow</span><h3>The stream of transactions on their way to a chain</h3><p>Every trade or payment a wallet sends has value to others: whoever sees it first can trade ahead of it, and whoever places it in a block can charge for the position. In most wallets that value goes to outside parties.</p></div>
+      <div class="card"><span class="tag">Weaving</span><h3>Combining confirmed transactions before they are signed</h3><p><strong>In an ordinary wallet, the signature comes first.</strong> Each transaction is signed on the owner's phone or hardware wallet before it leaves, and a signed transaction cannot be changed. Whoever handles it afterwards can only decide when it goes out and in what order.</p><p><strong>In Counterseal, the signature comes last.</strong> Each owner confirms what the transaction may do, and Counterseal holds it unsigned on a blockchain. Because nothing is signed yet, its form is still open: it can be matched against other subscribers' transactions, combined with them, sent by a different route, or prepared for whichever destination suits it. The result is checked against the limits each owner approved, and only then signed.</p></div>
+    </div>
+  </div></div>
+</section>
+<section id="weave-forms" class="sky">
+  <div class="wrap"><div class="body">
+    <h2>Weaving is more than matching.</h2>
+    <p class="lead">Matching buyers with sellers is the best-known use of a combined flow, and it is only one of several. Because every transaction in the flow is still unsigned, Counterseal can give the flow the form that suits its next step.</p>
+    <figure>
+      <svg viewBox="0 0 1000 292" role="img" aria-label="Four subscribers' confirmed transactions arrive unsigned: Alice sells 1 ETH, Bob buys 1 ETH, Carol swaps USDC, and Dan pays three people. Counterseal can match them, combine them, change the route and choose the block builder. Each result is checked against its owner's limits and then signed. The package is delivered to public chains on a private channel, and savings and rebates return to the subscribers." style="background:#fff">
+        <g font-family="IBM Plex Sans, sans-serif" font-size="15">
+          <g fill="#f3f5f7" stroke="#7b93a6" stroke-width="2"><rect x="24" y="30" width="204" height="46" rx="23"/><rect x="24" y="90" width="204" height="46" rx="23"/><rect x="24" y="158" width="204" height="46" rx="23"/><rect x="24" y="218" width="204" height="46" rx="23"/></g>
+          <text x="126" y="58" text-anchor="middle" fill="#10202b">Alice sells 1 ETH</text>
+          <text x="126" y="118" text-anchor="middle" fill="#10202b">Bob buys 1 ETH</text>
+          <text x="126" y="186" text-anchor="middle" fill="#10202b">Carol swaps USDC</text>
+          <text x="126" y="246" text-anchor="middle" fill="#10202b">Dan pays three people</text>
+          <g stroke="#4f626e" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M232 53 C270 53 266 104 298 108"/><path d="M232 113 C262 113 270 122 298 124"/><path d="M232 181 C262 181 270 164 298 162"/><path d="M232 241 C270 241 266 182 298 178"/></g>
+          <rect x="302" y="14" width="372" height="264" rx="16" fill="#10202b"/>
+          <text x="488" y="42" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600" fill="#ffd9a8">COUNTERSEAL · NOTHING IS SIGNED YET</text>
+          <rect x="320" y="56" width="336" height="32" rx="8" fill="#e8811a"/><text x="488" y="77" text-anchor="middle" font-weight="600" fill="#fff">Match</text>
+          <rect x="320" y="94" width="336" height="32" rx="8" fill="#5f4bdb"/><text x="488" y="115" text-anchor="middle" font-weight="600" fill="#fff">Combine</text>
+          <rect x="320" y="132" width="336" height="32" rx="8" fill="#1b8a5a"/><text x="488" y="153" text-anchor="middle" font-weight="600" fill="#fff">Change the route</text>
+          <rect x="320" y="170" width="336" height="32" rx="8" fill="#e00b12"/><text x="488" y="191" text-anchor="middle" font-weight="600" fill="#fff">Choose the block builder</text>
+          <text x="488" y="230" text-anchor="middle" font-size="13.5" fill="#dfe7ec">Each result is checked against its</text>
+          <text x="488" y="250" text-anchor="middle" font-size="13.5" fill="#dfe7ec">owner's limits. Only then is it signed.</text>
+          <g stroke="#1b8a5a" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M678 92 H752"/><path d="M742 84 l10 8 l-10 8"/></g>
+          <rect x="758" y="60" width="218" height="64" rx="10" fill="#e9f8f0" stroke="#1b8a5a" stroke-width="2"/>
+          <text x="867" y="88" text-anchor="middle" font-weight="600" fill="#10202b">Back to subscribers</text>
+          <text x="867" y="109" text-anchor="middle" font-size="13" fill="#4f626e">savings and rebates</text>
+          <g stroke="#e00b12" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M678 204 H752"/><path d="M742 196 l10 8 l-10 8"/></g>
+          <rect x="758" y="172" width="218" height="64" rx="10" fill="#fff" stroke="#e00b12" stroke-width="2"/>
+          <text x="867" y="200" text-anchor="middle" font-weight="600" fill="#10202b">Public chains</text>
+          <text x="867" y="221" text-anchor="middle" font-size="13" fill="#4f626e">delivered on a private channel</text>
+        </g>
+      </svg>
+      <figcaption>An example. Alice's and Bob's trades are matched with each other. Dan's three payments are combined into one transaction. Carol's swap is sent by the route that suits it. The finished package goes to a chosen block builder on a private channel.</figcaption>
+    </figure>
+    <div class="rows">
+      <div><b>Match</b><span>If you are selling what another subscriber is buying, the two trades settle against each other directly. No fee is paid to an outside exchange, and the network fee is paid once. A match can also run around three or more subscribers, and a large order can be filled in parts as counterparties arrive.</span></div>
+      <div><b>Combine</b><span>Many transfers travel in one transaction and share its cost. Steps that depend on each other, such as granting a permission and making the trade that uses it, go in one unit that succeeds or fails as a whole.</span></div>
+      <div><b>Change the route</b><span>A trade written for one exchange can be sent to another exchange or swap service instead, when its owner has allowed that. Part of a trade can be matched and the rest sent to an outside market.</span></div>
+      <div><b>Choose the block builder</b><span>A block builder is a party that assembles blocks; on some chains the same role is called a sequencer or a validator. The finished package goes to a block builder chosen by the terms each one offers, with others as a fallback. Outside traders can also bid for the position directly behind a transaction, and the winning bid is paid into the pool that is shared out.</span></div>
+      <div><b>Deliver privately</b><span>Whatever leaves is handed over on a private channel. It is not broadcast to the public waiting area for unconfirmed transactions, where anyone can see an order and trade ahead of it.</span></div>
+    </div>
+    <div class="callout"><p><strong>Only matching needs a counterparty.</strong> The other four work on any flow, including a small one. All five are worth more as the flow grows: more matches, larger combined transactions, and better terms from block builders.</p></div>
+  </div></div>
+</section>
+<section id="value">
+  <div class="wrap sec">
+    <div class="body">
+      <h2>The value in your transaction comes back to you.</h2>
+      <p class="lead">When you trade on a public chain, other parties see your order before it settles and profit from it. Weaving keeps that value with the subscribers whose transactions created it.</p>
+      <div class="rows">
+        <div><b>Return</b><span>Savings from matching are yours. Most of the value that others would have taken from your trade is paid back to you. The remainder covers protocol costs.</span></div>
+        <div><b>Show</b><span>Each transaction comes with a receipt: your price, your rebate, and what you received.</span></div>
+      </div>
+      <div class="callout" style="border-left-color:var(--sun)"><p><strong>Who receives the value.</strong> Savings from matching go to the subscribers whose orders were matched. Most of the value that outside parties would have taken is paid back to the subscriber whose transaction created it. The remainder goes to the protocol's treasury and covers the service's running costs. Counterseal, Inc. receives none of it.</p></div>
+    </div>
+  </div>
+</section>
+<section id="weave-last" class="sky">
+  <div class="wrap"><div class="body">
+    <h2>The signature comes last. That is what makes weaving possible.</h2>
+    <p class="lead">In an ordinary wallet the phone signs first. A signed transaction is fixed, so anyone who gathers such transactions can only decide the order they go in. Counterseal signs last, so the form of each transaction can still be chosen.</p>
+    <ol class="steps">
+      <li><strong>You confirm an envelope</strong>On your device you approve what you want and your limits: the most you give, the least you receive, the fee, the deadline, and the ways of carrying it out that you allow.</li>
+      <li><strong>The transactions are woven</strong>Code on a blockchain gives the gathered transactions their final form: it matches opposite orders, combines transfers, chooses the route for what remains, and chooses who will place the package in a block.</li>
+      <li><strong>The result is checked</strong>Before any signature exists, the same code works out what the combined result does to your account and confirms it is inside your envelope.</li>
+      <li><strong>Only then is it signed</strong>The signed package goes out privately. While it was being combined there was nothing to steal, copy or trade ahead of.</li>
+    </ol>
+    <div class="tablewrap">
+      <table class="vs">
+        <thead><tr><th></th><th>Ordinary wallets</th><th>Order-matching services</th><th>Counterseal</th></tr></thead>
+        <tbody>
+          <tr><th>What you approve</th><td>A finished transaction</td><td>An order with limits, signed on your phone</td><td>An envelope, confirmed on your device</td></tr>
+          <tr><th>Who combines the orders</th><td>Nobody; they can only be put in order</td><td>Outside parties, who can see the orders</td><td>Code on a public blockchain</td></tr>
+          <tr><th>Can the form of your transaction still change?</th><td>No</td><td>Yes, for token swaps</td><td>Yes, for any way of carrying it out that you allowed</td></tr>
+          <tr><th>Does something usable by others exist while orders are combined?</th><td>Yes: the signed transaction</td><td>Yes: the signed order</td><td>No</td></tr>
+          <tr><th>Who checks the result against what you approved</th><td>Nobody</td><td>A contract on the chain</td><td>The signer, before signing, and the chain</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><p><strong>What is different.</strong> Counterseal is the only wallet architecture we know of in which the weaving of subscribers' transactions is itself performed on a blockchain. Elsewhere, companies or outside parties combine the orders, and a blockchain only checks the result. In Counterseal, whoever combines the transactions cannot see them early, cannot alter them, and cannot sign anything their owners did not approve, because the combiner and the signer are the same public code.</p></div>
+  </div></div>
+</section>
+<section id="weave-limits">
+  <div class="wrap"><div class="body">
+    <h2>What it depends on.</h2>
+    <div class="rows">
+      <div><b>The number of subscribers</b><span>Only matching needs a counterparty: a buyer for every seller. With few subscribers, most trades go to outside markets, and the benefit comes from the other forms of weaving: combining, choosing the route, choosing the block builder and private delivery. All of them are worth more as subscribers join.</span></div>
+      <div><b>Your envelope</b><span>Weaving can do anything inside the limits you confirmed and nothing outside them.</span></div>
+      <div><b>A short wait</b><span>Holding an order to look for a match takes time. Your deadline sets how long.</span></div>
+      <div><b>Your choice</b><span>An account can exclude its transactions from matching, from auctions, or from being combined with other accounts' transactions.</span></div>
+    </div>
+    <div class="callout"><p><strong>Status.</strong> Weaving is designed and is the subject of a pending patent application. It is not yet built. It is a separate application from the wallet, and the wallet works without it.</p></div>
+  </div></div>
+</section>
+<section class="ctaband"><div class="wrap"><h2>Weaving is described in more detail in the investor presentation.</h2><div class="cta"><a class="btn" href="investors.html#contact">Request the investor presentation</a><a class="btn alt" href="investors.html">Questions investors ask</a></div></div></section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><a class="brand" href="index.html"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a><p class="small">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p></div>
+      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
+      <div><h4>The heists</h4><a href="heist-1.html">Part 1: The Locked Room</a><a href="heist-2.html">Part 2: The Trail Out the Door</a><a href="heist-3.html">Part 3: No Backstop</a><a href="heist-4.html">Part 4: Fifty Signatures</a></div>
+      <div><h4>Company</h4><a href="investors.html">For investors</a><a href="investors.html#today">Status and patents</a><a href="investors.html#contact">Contact</a><a href="mailto:alathrop2000@gmail.com">alathrop2000@gmail.com</a></div>
+    </div>
+    <p class="small legal">© 2026 Counterseal, Inc. In development; not yet available. Nothing on this site is an offer to sell a product, a token or a security. Bybit, Binance, Railgun, Zcash, GNU Taler, Safe and other names belong to their owners and are used only to describe public events and public designs.</p>
+  </div>
+</footer>
+
+<script>
+/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. */
+(function(){function up(){if(location.hash.length>1)return;try{window.scrollTo(0,0);var t=document.getElementById("top");if(t&&t.scrollIntoView)t.scrollIntoView({block:"start"});}catch(e){}}
+if("scrollRestoration" in history){try{history.scrollRestoration="manual";}catch(e){}}
+up();window.addEventListener("pageshow",up);window.addEventListener("load",up);})();
+</script>
+</body>
+</html>
