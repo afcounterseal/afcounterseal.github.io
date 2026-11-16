@@ -1,2 +1,0 @@
-# afcounterseal.github.io
-Website
