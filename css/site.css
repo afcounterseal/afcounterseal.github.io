@@ -28,7 +28,7 @@ p{margin:0;max-width:65ch}
 .brand svg{height:25px;width:auto}
 .nav nav{display:flex;gap:18px;flex-wrap:wrap}
 .nav nav a{font-size:14px;font-weight:500;text-decoration:none;color:var(--soft)}
-.nav nav a:hover{color:var(--seal)}
+@media (hover:hover){.nav nav a:hover{color:var(--seal)}}
 /* hero */
 .hero{padding:84px 0 96px;text-align:center;background:linear-gradient(115deg,#dff1fb 0%,#eef0ff 48%,#ffeed6 100%)}
 .hero .wrap{display:block}
@@ -177,7 +177,7 @@ footer .legal{border-top:1px solid var(--line);padding-top:18px;margin-top:10px;
 /* v0.18: mixed colour scheme. Dark menu bar, page headings, closing band and footer; light reading sections. */
 :root{--band-sky:#f3f5f7;--band-sun:#f6f4f0;--band-mint:#f3f5f7;--band-lilac:#f4f3f7}
 .nav{background:#0d1013f2;border-bottom-color:#283037}
-.nav .brand{color:#fff} .nav nav a{color:#b5c0c8} .nav nav a:hover,.nav nav a[aria-current="page"]{color:#ff5a5f}
+.nav .brand{color:#fff} .nav nav a{color:#b5c0c8} .nav nav a[aria-current="page"]{color:#ff5a5f} @media (hover:hover){.nav nav a:hover{color:#ff5a5f}}
 .nav a:focus-visible,footer a:focus-visible,.hero a:focus-visible,.ctaband a:focus-visible{outline-color:#fff}
 .hero,.pagehead,.arthead{background:radial-gradient(900px 420px at 50% 0%,#3a0d10 0%,#15090b 45%,#0d1013 100%);color:#f2f5f7}
 .hero .lead,.pagehead .lead{color:#e3e8ec}
@@ -200,3 +200,6 @@ footer .legal{border-top-color:#283037}
 /* v0.26 */
 .termcard .term{font-size:32px;font-weight:800;letter-spacing:-.03em;line-height:1.05;color:#f80010}
 .card.termcard p.def{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.3;color:var(--ink);letter-spacing:-.01em;margin-bottom:2px}
+
+/* v0.28 */
+.nav nav a[aria-current="page"]{color:#ff5a5f;font-weight:600}

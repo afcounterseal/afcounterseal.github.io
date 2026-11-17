@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>No Backstop · Heist Series Part 3</title>
-<!-- Counterseal_Website_Draft_v0_26 · article page generated from the heist series text (series archive v9: Parts 1 to 4 at v1.3, v1.4, v1.4, v1.6) with the figures, In brief boxes and pull quotes of the PDF edition v2. -->
+<!-- Counterseal_Website_Draft_v0_32 · article page generated from the heist series text (series archive v9: Parts 1 to 4 at v1.3, v1.4, v1.4, v1.6) with the figures, In brief boxes and pull quotes of the PDF edition v2. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -260,7 +260,7 @@ and they still authorized the theft, because the thing that was attacked
 was not their keys but their <em>understanding of what they were
 signing.</em> If the best-equipped signers in the world can be made to
 approve their own ruin while holding their hardware wallets, the lone
-individual with a Ledger and a paper seed phrase is not meaningfully
+individual with a Ledger (the hardware-wallet maker) device and a paper seed phrase is not meaningfully
 defended. Self-custody, as it exists today, is custody without
 protection. It secures the key to the vault and leaves the person
 standing at the door with no way to tell whether the thing they are
@@ -380,7 +380,7 @@ legal or financial advice.</em></p>
   <div class="wrap">
     <div class="fcols">
       <div><a class="brand" href="index.html"><svg class="mark" viewBox="13 5.5 61 52.5" aria-hidden="true"><path fill-rule="evenodd" fill="#f80010" d="M43.5 6.5L73 57H14ZM43.5 20.5L60.5 50H56L43.5 28.5L31 50H26.5ZM43.5 43.5L47.3 50H39.7Z"/></svg> Counterseal</a><p class="small">A blockchain that runs the wallet for your other blockchains. Plus privacy.</p></div>
-      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private balance</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
+      <div><h4>Product</h4><a href="wallet.html">The wallet</a><a href="payments.html">Payments</a><a href="privacy.html">Private ledger</a><a href="weaving.html">Weaving</a><a href="wallet.html#recovery">Recovery</a></div>
       <div><h4>The heists</h4><a href="heist-1.html">Part 1: The Locked Room</a><a href="heist-2.html">Part 2: The Trail Out the Door</a><a href="heist-3.html">Part 3: No Backstop</a><a href="heist-4.html">Part 4: Fifty Signatures</a></div>
       <div><h4>Company</h4><a href="investors.html">For investors</a><a href="investors.html#today">Status and patents</a><a href="investors.html#contact">Contact</a><a href="mailto:alathrop2000@gmail.com">alathrop2000@gmail.com</a></div>
     </div>
@@ -388,9 +388,18 @@ legal or financial advice.</em></p>
   </div>
 </footer>
 <script>
-/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. */
-(function(){function up(){if(location.hash.length>1)return;try{window.scrollTo(0,0);var t=document.getElementById("top");if(t&&t.scrollIntoView)t.scrollIntoView({block:"start"});}catch(e){}}
+/* Open every page at its top. Without this, the viewer keeps the scroll position of the page the reader came from. The reset uses the window only; scrolling the main element into view would place it under the fixed menu bar. */
+(function(){function up(){if(location.hash.length>1)return;try{var d=document.documentElement,b=d.style.scrollBehavior;d.style.scrollBehavior="auto";window.scrollTo(0,0);d.style.scrollBehavior=b;}catch(e){}}
 if("scrollRestoration" in history){try{history.scrollRestoration="manual";}catch(e){}}
-up();window.addEventListener("pageshow",up);window.addEventListener("load",up);})();
+up();window.addEventListener("pageshow",up);window.addEventListener("load",function(){up();setTimeout(up,60);setTimeout(up,300);});})();
+</script>
+<script>
+/* Mark the menu link for the open page. A link to a place inside a page (Contact, The heists) is marked while that place is open. */
+(function(){var links=document.querySelectorAll("header.nav nav a");function page(){var p=location.pathname.split("/").pop()||"index.html";return p;}
+function mark(){var here=page()+location.hash,hit=null;for(var i=0;i<links.length;i++){var h=links[i].getAttribute("href");if(h===here){hit=links[i];}}
+if(!hit){for(var j=0;j<links.length;j++){var g=links[j].getAttribute("href");if(g.indexOf("#")<0&&g===page()){hit=links[j];}}}
+for(var k=0;k<links.length;k++){if(links[k]===hit){links[k].setAttribute("aria-current","page");}else{links[k].removeAttribute("aria-current");}}}
+mark();window.addEventListener("hashchange",mark);
+var brand=document.querySelector("header.nav a.brand");if(brand){brand.addEventListener("click",function(e){if(page()==="index.html"&&!location.hash){e.preventDefault();var d=document.documentElement,b=d.style.scrollBehavior;d.style.scrollBehavior="auto";window.scrollTo(0,0);d.style.scrollBehavior=b;}});}})();
 </script>
 </body></html>
