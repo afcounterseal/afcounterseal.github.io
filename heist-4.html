@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fifty Signatures · Heist Series Part 4</title>
-<!-- Counterseal_Website_Draft_v0_33 · article page generated from the heist series text (series archive v9: Parts 1 to 4 at v1.3, v1.4, v1.4, v1.6) with the figures, In brief boxes and pull quotes of the PDF edition v2. -->
+<!-- Counterseal_Website_Draft_v0_45 · article page generated from the heist series text (series archive v9: Parts 1 to 4 at v1.3, v1.4, v1.4, v1.6) with the figures, In brief boxes and pull quotes of the PDF edition v2. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -530,8 +530,8 @@ displays balances. It has no authority. If it is compromised, as the
 computers of Binance’s engineers were, it can propose a transaction. It
 cannot approve one, cannot alter one after approval, and never handles a
 signed transaction.</li>
-<li><strong>The Signing Enclave (SE)</strong> is a set of programs
-(<em>canisters</em>) running on the Internet Computer, a blockchain
+<li><strong>The Signing Enclave (SE)</strong> is a set of <em>canister smart contracts</em>
+running on the Internet Computer, a blockchain
 whose computation is replicated across independent machines and agreed
 by consensus. The SE decodes every proposed transaction from its actual
 bytes into a canonical description of what it does, checks it against
@@ -666,8 +666,8 @@ is everything around the keypair. At Binance the machines that held the
 shares took their requests from one internal service, and whoever could
 feed that service could have anything signed. In Counterseal the shares
 are held by the independently operated machines of the platform. Those
-machines sign only at the request of the SE’s program, as agreed by
-consensus, and that program makes the request only when the policy is
+machines sign only at the request of the SE’s smart contracts, as agreed by
+consensus, and they make the request only when the policy is
 satisfied and the subscriber has confirmed on the CT. This is why the
 four facts are stated together. The first says that the keypair cannot
 be stolen. The other three say who decides what it signs.</p>
